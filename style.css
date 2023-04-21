@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat,sans-serif;
+    font-weight: bold;
+}
+
+h1{font-size: 2em;}
+h2{font-size: 1.6em;}
+p{font-size: 1.1em;}
+a{text-decoration: none;}
+
+/* --------------------------------- header --------------------------------- */
+body{
+    margin-top: 118px;
+    background: linear-gradient(rgb(224, 223, 223), white);
+}
+.header{
+    position: fixed;
+    background-color: whitesmoke;
+    height: 95px;
+    margin: -118px auto;
+    width: 100%;
+    border-bottom: solid 3px rgb(0, 0, 0 ,.5);
+}
+
+#title-header{
+    font-size: 29px;
+    color: rgb(116, 153, 41);
+    padding: 5px 20px;
+}
+
+#title-header:hover{
+    text-decoration: underline;
+}
+
+#header-nav{
+    margin-top: 7px;
+    text-align: center;
+
+}
+#header-nav li{
+    display: inline;
+    padding: 1em;
+    color:white;
+}
+#header-nav li a{
+    padding: 5px;
+    border-radius: 15px;
+    background-color: rgb(163, 161, 161);
+    color:rgb(240, 240, 240);
+    text-shadow: 0 0 10px rgb(98, 99, 98);
+    font-size: 0.9em;
+}
+#header-nav a:hover{
+    background-color:rgb(241, 241, 241) ;
+    color:rgb(163, 161, 161);
+    border: solid 0.9px rgb(131, 131, 131);
+    position: relative;
+    bottom: 3px;
+    right: 3px;
+    font-size: 1em;
+    text-shadow: none;
+
+}
+
+/* --------------------------------- profile -------------------------------- */
+
+#profile{
+    box-shadow: 0 0 10px 3px rgb(186, 68, 255);
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+    background-repeat: none;
+    color:white;
+    max-width: 100%;
+    text-align: center;
+    height: 350px;
+    text-shadow: 0 0 10px black;
+}
+
+#profile img{
+    display: inline-block;
+    margin-top: 70px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 0 black;
+}
+#profile img:hover{
+    height: 210px;
+
+}
+#text{
+    display: inline-block;
+}
+#name{
+    display: inline-block;
+    color:rgb(186, 255, 48);
+}
+#name:hover{
+    color:rgb(153, 211, 36) ;
+}
+#profile p{
+    text-decoration: underline;
+}
+
+/* -------------------------------- Quien soy ------------------------------- */
+
+#about{
+    margin: 90px auto;
+    padding: 70px 20px;
+    box-shadow: 0 0 15px rgb(0, 0, 0, .37);
+}
+#about h2:hover #hi{
+    opacity: 0;
+}
+#about h2{
+    color:cornflowerblue;
+    padding: 5px;
+    display: inline-block;
+    text-shadow: 2px 2px 2px rgb(3, 43, 117);
+}
+#about h2:hover{
+    transition: 0.3s;
+    display: inline-block;
+    background-image: url(mano.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5px;
+}
+#color-name{
+    color: darkcyan;
+    padding: 0px 3px;
+}
+
+#color-name:hover{
+    background-color: darkcyan;
+    border-radius: 10px;
+    padding: 0px 3px;
+    color: white;
+}
+
+#contact{
+    box-shadow: 0 0 15px rgb(0, 0, 0, .37);
+    padding: 0px 20px;
+    margin-bottom: 100px;
+    height: 350px;
+}
+
+.footer-contact h2{
+
+    padding: 40px 0px 30px 0px;
+    position: relative;
+
+    
+}
+#social{
+    padding: 70px 0px;
+    position:relative;
+}
+#copy{
+    display: inline;
+    position: absolute;
+    left: 30px;
+    padding: 10px;
+}
+#reds{
+    position: absolute;
+    right: 30px;
+}
+#reds a i{
+    display: inline-block;
+    font-size: 30px;
+    padding: 10px;
+    color: blue;
+}
+#reds a i:hover{
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+}
+#msg{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+    height: 100px;
+    position: absolute;
+}
+#submit{
+    position:absolute;
+    left: 330px;
+
+}
