@@ -1,0 +1,207 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{text-decoration: none;}
+li{list-style: none;}
+
+/* --------------------------------- header --------------------------------- */
+.header{
+    margin-top: -60px;
+    background-color: whitesmoke;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    height: 60px;
+}
+ /* ---------------------------------- LOGO ---------------------------------- */
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo a img{
+    border-radius: 55%;
+    height: 3.5em;
+}
+
+/* ------------------------------- navegacion ------------------------------- */
+nav{
+    padding: 10px 10px;
+}
+nav ul{
+    padding-top: 10px;
+    display: flex;
+    text-align: center;
+}
+nav ul li{
+    padding: 0px 10px;
+}
+nav ul li a{
+    font-family: 'Bebas Neue', cursive;
+    white-space: nowrap;
+    padding: 0px 5px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, palevioletred 50%, transparent 50%);
+    background-position: 0 100%;
+    background-size: 200% 2px;
+    transition: background-position 0.5s;
+}
+nav ul li a:hover {
+    background-position: -100% 100%;
+    color: palevioletred;
+    background-color: whitesmoke;
+    animation: subrayar 0.5s forwards;
+}
+
+@keyframes subrayar {
+    from {
+    width: 0;
+    }
+    to {
+    width: 100%;
+    }
+}
+
+/* --------------------------------- banner --------------------------------- */
+.banner{
+    margin-top: 60px;
+    background-image: url(https://scontent.fbhi4-1.fna.fbcdn.net/v/t39.30808-6/316659475_652713422956652_2724468220481152210_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=9Vlykwz8_bQAX9ZMk6_&_nc_ht=scontent.fbhi4-1.fna&oh=00_AfCrB6dijNOvhUhaE_Nw6y006PdxbSE5F_R9qIMvYaCb3A&oe=6449E5A9);
+    background-position: 100%;
+    height: 470px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.title{
+    margin: 230px auto;
+    display: inline-block;
+}
+/* ---------------------------------- text ---------------------------------- */
+.mostacho{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-shadow: 0px 0px 15px rgb(121, 29, 60);
+    background-color: palevioletred;
+    padding: 5px;
+    border-radius: 13px;
+    font-size: 4em;
+    font-stretch: expanded;
+}
+.banner button{
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 2em;
+    padding: 5px;
+    color:crimson;
+    background-color: yellow;
+    border-radius: 8px;
+    font-family: 'Bebas Neue', cursive;
+    border: none;
+    transition: background-color 0.7s ease;
+    transition: color 0.5s ease;
+}
+.banner button:hover{
+    color: yellow;
+    background-color:palevioletred;
+    text-shadow: 0px 0px 5px deeppink;
+    text-decoration: underline;
+}
+
+/* -------------------------------- Maps -------------------------------- */
+.content{
+    padding: 50px 30px;
+}
+.testimonials{
+    margin: 50px 0px;
+    height: 470px;
+}
+.star{
+    text-shadow: 1px 0px 2px rgb(0, 0, 0);
+    color: yellow;
+}
+#maps{
+    float: right;
+    border-radius: 15px;
+    width: 50%;
+}
+.testimonio{
+    border-radius: 15px;
+    margin: 5px 0px;
+    padding: 10px;
+    background-color: whitesmoke;
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    width: 40%;
+}
+
+/* -------------------------------- imagenes -------------------------------- */
+.images{
+    margin-top: 100px;
+    text-align: center;
+}
+.image-class{
+    height: 27vw;
+    display: inline-block;
+}
+.image-class:hover{
+    position: relative;
+    top: 5px;
+    right: 5px;
+    border: 2px solid palevioletred;
+    box-shadow: 4px 2px 13px rgb(165, 65, 98);
+}
+.images-h2{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    color: palevioletred;
+    font-size: 50px;
+}
+.images-h2:hover{
+    text-decoration: underline;
+}
+
+/* --------------------------------- Footer --------------------------------- */
+.footer{
+    background-color: palevioletred;
+    height: 70px;
+}
+/*
+font-family: 'Bebas Neue', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/ 
+#copy a{
+    color: whitesmoke;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.social{
+    color: whitesmoke;
+    padding: 25px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#reds{
+    padding: 0px 10px;
+}
+#reds a{
+    color: white;
+    font-size: 1.3em;
+    padding: 5px 15px;
+    text-align: right;
+}
+#reds a:hover{
+    background-color: whitesmoke;
+    color: palevioletred;
+    font-size: 1.6em;
+    padding: 5px 20px;
+}
