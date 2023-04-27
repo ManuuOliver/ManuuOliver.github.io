@@ -1,12 +1,13 @@
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 a{text-decoration: none;}
 li{list-style: none;}
+body{
+    margin-top: 60px;
+}
 
 /* --------------------------------- header --------------------------------- */
 .header{
@@ -14,19 +15,20 @@ li{list-style: none;}
     background-color: whitesmoke;
     display: flex;
     position: fixed;
+    z-index: 1;
     width: 100%;
     justify-content: space-between;
     height: 60px;
 }
  /* ---------------------------------- LOGO ---------------------------------- */
 #logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 #logo a img{
-    border-radius: 55%;
     height: 3.5em;
+}
+#logo a img:hover{
+    filter: drop-shadow(2px 2px 4px palevioletred);
 }
 
 /* ------------------------------- navegacion ------------------------------- */
@@ -36,7 +38,6 @@ nav{
 nav ul{
     padding-top: 10px;
     display: flex;
-    text-align: center;
 }
 nav ul li{
     padding: 0px 10px;
@@ -45,6 +46,7 @@ nav ul li a{
     font-family: 'Bebas Neue', cursive;
     white-space: nowrap;
     padding: 0px 5px;
+    text-align: center;
     color: white;
     text-decoration: none;
     border-radius: 15px;
@@ -68,10 +70,8 @@ nav ul li a:hover {
     width: 100%;
     }
 }
-
 /* --------------------------------- banner --------------------------------- */
 .banner{
-    margin-top: 60px;
     background-image: url(https://scontent.fbhi4-1.fna.fbcdn.net/v/t39.30808-6/316659475_652713422956652_2724468220481152210_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=9Vlykwz8_bQAX9ZMk6_&_nc_ht=scontent.fbhi4-1.fna&oh=00_AfCrB6dijNOvhUhaE_Nw6y006PdxbSE5F_R9qIMvYaCb3A&oe=6449E5A9);
     background-position: 100%;
     height: 470px;
@@ -83,7 +83,7 @@ nav ul li a:hover {
     margin: 230px auto;
     display: inline-block;
 }
-/* ---------------------------------- text ---------------------------------- */
+/* ----------------------------------  banner-text ---------------------------------- */
 .mostacho{
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -92,28 +92,7 @@ nav ul li a:hover {
     padding: 5px;
     border-radius: 13px;
     font-size: 4em;
-    font-stretch: expanded;
 }
-.banner button{
-    display: inline-block;
-    margin-top: 30px;
-    font-size: 2em;
-    padding: 5px;
-    color:crimson;
-    background-color: yellow;
-    border-radius: 8px;
-    font-family: 'Bebas Neue', cursive;
-    border: none;
-    transition: background-color 0.7s ease;
-    transition: color 0.5s ease;
-}
-.banner button:hover{
-    color: yellow;
-    background-color:palevioletred;
-    text-shadow: 0px 0px 5px deeppink;
-    text-decoration: underline;
-}
-
 /* -------------------------------- Maps -------------------------------- */
 .content{
     padding: 50px 30px;
@@ -202,6 +181,77 @@ font-family: 'Montserrat', sans-serif;
 #reds a:hover{
     background-color: whitesmoke;
     color: palevioletred;
+    border-radius: 4px;
     font-size: 1.6em;
     padding: 5px 20px;
 }
+
+/* -------------------------------- Page Routines -------------------------------- */
+.plans{
+    text-align: center;
+    padding: 20px 25px;
+    background-color: whitesmoke;
+}
+
+.routine-plan{
+    text-align: center;
+    height: 250px;
+    width: 30%;
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+    border: 5px solid palevioletred;
+    border-radius: 4px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 15px;
+}
+.routine-plan a{
+    font-size: 1.5em;
+    text-align: left;
+    
+}
+
+/* --------------------------- Hipertrofia hombre --------------------------- */
+#hypertrophy-man{
+    background-image:url(https://scontent.fbhi4-1.fna.fbcdn.net/v/t39.30808-6/315028639_640719917489336_917737779288603435_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=KKnZ015qZCUAX8CM0az&_nc_ht=scontent.fbhi4-1.fna&oh=00_AfCPVxFY7lK2auWVYepeDP6OweJ676wB231Mwwy2NmpiIg&oe=644E9C5A);
+
+    background-position: 50%;
+    background-repeat: none;
+    background-size: cover;
+}
+#hypertrophy-man:hover{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://scontent.fbhi4-1.fna.fbcdn.net/v/t39.30808-6/315028639_640719917489336_917737779288603435_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=KKnZ015qZCUAX8CM0az&_nc_ht=scontent.fbhi4-1.fna&oh=00_AfCPVxFY7lK2auWVYepeDP6OweJ676wB231Mwwy2NmpiIg&oe=644E9C5A);
+}
+
+.hypertrophy-women{
+
+}
+
+.athletes{
+
+}
+
+.hypertrophy{
+
+}
+
+/*
+hipertrofia mujer
+https://scontent.fbhi4-1.fna.fbcdn.net/v/t39.30808-6/322368360_523041949600865_8011287231294711468_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=bNhXSvUsDNwAX9_jaxW&_nc_ht=scontent.fbhi4-1.fna&oh=00_AfCYIa7T-nkjBBHkp11aHwXDqO5B5NLxlQrsEBOJ0-tgIA&oe=644E463B
+atletas
+https://scontent.fbhi4-1.fna.fbcdn.net/v/t39.30808-6/322606709_949059779811503_2115123921705916484_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_ohc=MFp0oUGFVlAAX8XJFwk&_nc_ht=scontent.fbhi4-1.fna&oh=00_AfDaq7TAsAVaU0yczvzoGfQdWVIkHHGEJNz7JWuiUNs6aQ&oe=644E0FE6 
+hipertrofia
+https://scontent.fbhi4-1.fna.fbcdn.net/v/t39.30808-6/315700540_646739973553997_2791460661022180988_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=XL_TeX4Ya1MAX_PJ1-1&_nc_ht=scontent.fbhi4-1.fna&oh=00_AfB9dQl6XvCUCNsovI4tZX8efFgq4Q4rVAJB_J21Z5-qtw&oe=644F97A6
+*/
+
+
+
+
+
+
+
+
+
+
+
+
