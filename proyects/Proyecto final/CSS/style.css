@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-padding-top: 65px;
+    scroll-behavior: smooth;
+}
 a{text-decoration: none;}
 li{list-style: none;}
 h2{
@@ -158,15 +162,16 @@ nav ul li a:hover {
 /* --------------------------------- Footer --------------------------------- */
 .footer{
     background-color: palevioletred;
-    height: 70px;
 }
 #copy a{
+    padding-left: 10px;
     color: whitesmoke;
     font-family: 'Roboto Condensed', sans-serif;
 }
 .social{
     color: whitesmoke;
-    padding: 25px 10px;
+    height: 70px;
+    align-items: center;
     display: flex;
     justify-content: space-between;
 }
@@ -190,17 +195,22 @@ nav ul li a:hover {
 /* -------------------------------- Page Routines -------------------------------- */
 .plans{
     text-align: center;
+    
     padding: 20px 25px;
+    display: flex;
     background-color: whitesmoke;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.plans h2{
+    width: 100%;
 }
 
 .routine-plan{
     flex-wrap: wrap;
-    height: 260px;
     width: 40%;
     padding: 10px;
     margin: 20px;
-    display: inline-block;
     border: 5px solid palevioletred;
     border-radius: 4px;
     border-top-right-radius: 30px;
@@ -228,6 +238,7 @@ nav ul li a:hover {
     list-style-position: inside;
 }
 .routine-plan ol li:hover{
+    font-weight: bold;
     color: palevioletred;
 }
 /* --------------------------- Fondos de rutinas --------------------------- */
@@ -269,35 +280,182 @@ nav ul li a:hover {
     background-size: cover;
 }
 #hypertrophy:hover{
-    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://scontent.fbhi4-1.fna.fbcdn.net/v/t39.30808-6/315700540_646739973553997_2791460661022180988_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=XL_TeX4Ya1MAX_PJ1-1&_nc_ht=scontent.fbhi4-1.fna&oh=00_AfB9dQl6XvCUCNsovI4tZX8efFgq4Q4rVAJB_J21Z5-qtw&oe=644F97A6);
+    background-image:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://scontent.fbhi4-1.fna.fbcdn.net/v/t39.30808-6/315700540_646739973553997_2791460661022180988_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=730e14&_nc_ohc=XL_TeX4Ya1MAX_PJ1-1&_nc_ht=scontent.fbhi4-1.fna&oh=00_AfB9dQl6XvCUCNsovI4tZX8efFgq4Q4rVAJB_J21Z5-qtw&oe=644F97A6);
 }
 
 /* --------------------------------- contact -------------------------------- */
+.contact-main{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://scontent.fbhi4-1.fna.fbcdn.net/v/t39.30808-6/274500266_1622489741453922_6776516610836215139_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=e3f864&_nc_ohc=divB4wPOPWEAX_tlYOx&_nc_ht=scontent.fbhi4-1.fna&oh=00_AfANOgpPGgs4dYI-7h9nR7w_fUYohba66wdsPtyr-QeYIw&oe=644F2F09);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .contact{
     display: flex;
     padding: 25px;
-    height: 435px;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
-.contact img{
+.contact-image img{
     border-radius: 15px;
-    height: 200px;
-    margin-right: 5px;
-}
-
-.contact-image{
-    height: 100%;
-}   
+    border: 2px solid rgb(170, 170, 170);
+    box-shadow: 0px 0px 5px rgb(250, 250, 250);
+    width: 300px;
+} 
 .contact-form{
     border: 3px solid palevioletred;
+    display: flex;
+    flex-direction: column;
     box-shadow: 0px 0px 4px rgb(255, 0, 43);
     padding: 10px;
     background-color: whitesmoke;
     border-radius: 15px;
+    gap: 10px;
 }
 .contact-form label{
-    font-family: ;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.1em;
+}
+.contact-form input{
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.contact-form #email{
+    width: 80%;
 }
 
+.contact-form #submit{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2em;
+    padding: 2px;
+    width: 70px;
+    background-color: pink;
+    border-radius: 8px;
+    border: 2px solid rgb(207, 50, 103);
+    margin: 0 auto;
+}
+.contact-form #submit:hover{
+    color: whitesmoke;
+    background-color: rgb(224, 81, 129);
+    font-size: 1.25em;
+    text-shadow: 0px 0px 3px black;
+    border: 2px solid rgb(230, 141, 171);
+}
+#msg{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    height: 100px;
+    width: 100%;
+}
+/* ---------------------------- TELEPHONE --------------------------- */
+.telephone{
+    color: pink;
+    position: fixed;
+    left: 0;
+    padding: 10px;
+    bottom: 100px;
+    border: none;
+    box-shadow: none;
+}
+.telephone img{
+    height: 65px;
+    filter: drop-shadow(2px 2px 4px rgb(0, 0, 0));
+}
+.telephone img:hover{
+    height: 70px;
+}
+
+/* -------------------------------- TIMETABLE ------------------------------- */
+.schedules{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.schedules-section{
+    width: 100%;
+}
+/* ------------------------------ TIMETABLE NAV ----------------------------- */
+.shedules-section_nav{
+    padding: 20px 0px;
+    background-color: palevioletred;
+    border-radius: 30px;
+}
+.shedules-section_nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.shedules-section_nav ul li a{
+    border-right: 1px solid rgba(255, 192, 203, 0.603);
+    border-left: 1px solid rgba(255, 192, 203, 0.603);
+    color: whitesmoke;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    flex-direction: row;
+}
+.shedules-section_nav ul li a:hover{
+    background-color: whitesmoke;
+    color: palevioletred;
+    font-weight: bold;
+}
+
+/* --------------------------- TRAINING SCHEDULES --------------------------- */
+/*
+font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+.section-training{
+    padding: 20px 25px;
+    width: 100%;
+    background-color: whitesmoke;
+    transition: 0.4s;
+}
+.section-training:hover{
+    transition: 0.4s;
+    background-color: rgb(241, 227, 229);
+    border-top-right-radius: 0;
+    border-top-right-radius: 70%;
+}
+.training-schedules{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px 0px;
+    width: 100%;
+}
+.training-schedules h3{
+    font-size: 1.35em;
+    color: whitesmoke;
+    background-color: palevioletred;
+    display: inline-block;
+    border-radius: 7px;
+    padding: 3px 5px;
+}
+.training-schedules ul li{
+    color:rgb(48, 47, 47);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+.schedules-hour{
+    color: palevioletred;
+    text-decoration: underline;
+    padding: 0px 5px;
+    text-shadow: 0px 0px 5px pink;
+}
+.schedules-hour:hover{
+    color: whitesmoke;
+    background-color: palevioletred;
+    border-radius: 5px;
+}
 
 
 
