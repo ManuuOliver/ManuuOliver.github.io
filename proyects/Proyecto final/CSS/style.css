@@ -1,8 +1,17 @@
+/* Fuentes
+font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+/* -------------------------- configuracion general ------------------------- */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+/* ------------------------- Scroll suave y padding para el espacio que ocupa el header --------------------------------- */
 html{
     scroll-padding-top: 65px;
     scroll-behavior: smooth;
@@ -73,7 +82,7 @@ nav ul li a:hover {
     background-color: whitesmoke;
     animation: subrayar 0.5s forwards;
 }
-
+/* ------------------------- animacion para el hover ------------------------ */
 @keyframes subrayar {
     from {
     width: 0;
@@ -82,7 +91,7 @@ nav ul li a:hover {
     width: 100%;
     }
 }
-/* --------------------------------- banner --------------------------------- */
+/* --------------------------------- banner de la pagina principal --------------------------------- */
 .banner{
     background-image: url(https://scontent.fbhi4-1.fna.fbcdn.net/v/t39.30808-6/316659475_652713422956652_2724468220481152210_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=9Vlykwz8_bQAX9ZMk6_&_nc_ht=scontent.fbhi4-1.fna&oh=00_AfCrB6dijNOvhUhaE_Nw6y006PdxbSE5F_R9qIMvYaCb3A&oe=6449E5A9);
     background-position: 100%;
@@ -105,7 +114,7 @@ nav ul li a:hover {
     border-radius: 13px;
     font-size: 4em;
 }
-/* -------------------------------- Maps -------------------------------- */
+/* -------------------------------- Maps del index -------------------------------- */
 .content{
     padding: 50px 30px;
 }
@@ -133,7 +142,7 @@ nav ul li a:hover {
     width: 40%;
 }
 
-/* -------------------------------- imagenes -------------------------------- */
+/* -------------------------------- imagenes del index -------------------------------- */
 .images{
     margin-top: 100px;
     text-align: center;
@@ -349,7 +358,7 @@ nav ul li a:hover {
     height: 100px;
     width: 100%;
 }
-/* ---------------------------- TELEPHONE --------------------------- */
+/* ---------------------------- Icono de telefono de la pagina de contactos --------------------------- */
 .telephone{
     color: pink;
     position: fixed;
@@ -367,7 +376,7 @@ nav ul li a:hover {
     height: 70px;
 }
 
-/* -------------------------------- TIMETABLE ------------------------------- */
+/* -------------------------------- Horarios ------------------------------- */
 .schedules{
     display: flex;
     flex-wrap: wrap;
@@ -376,7 +385,7 @@ nav ul li a:hover {
 .schedules-section{
     width: 100%;
 }
-/* ------------------------------ TIMETABLE NAV ----------------------------- */
+/* ------------------------------ Horarios NAV ----------------------------- */
 .shedules-section_nav{
     padding: 20px 0px;
     background-color: palevioletred;
@@ -406,14 +415,7 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-/* --------------------------- TRAINING SCHEDULES --------------------------- */
-/*
-font-family: 'Bebas Neue', cursive;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
-font-family: 'Ubuntu', sans-serif;
-*/
+/* --------------------------- Horarios de los diferentes entrenamientos --------------------------- */
 .section-training{
     padding: 20px 25px;
     width: 100%;
@@ -457,6 +459,27 @@ font-family: 'Ubuntu', sans-serif;
     border-radius: 5px;
 }
 
+/* ---------------------------------- Noticias ---------------------------------- */
+.news{
+    padding: 30px 25px;
+    border-top: 5px solid salmon;
+    background-color: whitesmoke;
+}
+.news-facebook{
+    margin-top: 50px;
+    gap: 20px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.news-style{
+    width: 40%;
+}
+.news-style iframe{
+    border-radius: 10px;
+    outline: 5px dashed palevioletred;
+}
 
 
 
