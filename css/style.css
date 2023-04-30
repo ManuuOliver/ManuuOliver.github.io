@@ -5,44 +5,53 @@
     font-family: Montserrat,sans-serif;
     font-weight: bold;
 }
-
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 118px;
+}
 h1{font-size: 2em;}
 h2{font-size: 1.6em;}
 p{font-size: 1.1em;}
+li{list-style: none;}
 a{text-decoration: none;}
-
-/* --------------------------------- header --------------------------------- */
-body{
+body main{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
     margin-top: 118px;
     background: linear-gradient(rgb(224, 223, 223), white);
 }
+/* --------------------------------- header --------------------------------- */
 .header{
     position: fixed;
     background-color: whitesmoke;
-    height: 95px;
     margin: -118px auto;
     width: 100%;
+    gap: 20px;
+    padding: 10px;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
     border-bottom: solid 3px rgb(0, 0, 0 ,.5);
+    display: flex;
 }
 
-#title-header{
+#title-header p{
     font-size: 29px;
     color: rgb(116, 153, 41);
-    padding: 5px 20px;
 }
 
-#title-header:hover{
+#title-header p:hover{
     text-decoration: underline;
 }
 
-#header-nav{
-    margin-top: 7px;
-    text-align: center;
-
+#header-nav ul{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
-#header-nav li{
-    display: inline;
-    padding: 1em;
+#header-nav li a{
+    white-space: nowrap;
     color:white;
 }
 #header-nav li a{
@@ -69,7 +78,7 @@ body{
 
 #profile{
     box-shadow: 0 0 10px 3px rgb(186, 68, 255);
-    background-image: url(img/fondo.jpg);
+    background-image: url(../img/fondo.jpg);
     background-size: cover;
     background-repeat: none;
     color:white;
@@ -77,24 +86,22 @@ body{
     text-align: center;
     height: 350px;
     text-shadow: 0 0 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #profile img{
-    display: inline-block;
-    margin-top: 70px;
     height: 200px;
     border-radius: 50%;
     box-shadow: 0 0 15px 0 black;
 }
 #profile img:hover{
     height: 210px;
-
-}
-#text{
-    display: inline-block;
+    box-shadow: 0 0 6px whitesmoke;
 }
 #name{
-    display: inline-block;
     color:rgb(186, 255, 48);
 }
 #name:hover{
@@ -105,9 +112,12 @@ body{
 }
 
 /* -------------------------------- Quien soy ------------------------------- */
-
+.article{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
 #about{
-    margin: 90px auto;
     padding: 70px 20px;
     box-shadow: 0 0 15px rgb(0, 0, 0, .37);
 }
@@ -123,7 +133,7 @@ body{
 #about h2:hover{
     transition: 0.3s;
     display: inline-block;
-    background-image: url(mano.png);
+    background-image: url(../img/mano.png);
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: center;
@@ -140,54 +150,61 @@ body{
     padding: 0px 3px;
     color: white;
 }
-
-#contact{
+/* --------------------------------- contact -------------------------------- */
+.contact{
+    padding: 70px 25px;
+    display: flex;
+    flex-direction: column;
     box-shadow: 0 0 15px rgb(0, 0, 0, .37);
-    padding: 0px 20px;
-    margin-bottom: 100px;
-    height: 350px;
 }
-
-.footer-contact h2{
-
-    padding: 40px 0px 30px 0px;
-    position: relative;
-
-    
+.contact h2{
+    padding: 15px 0px;
 }
-#social{
-    padding: 70px 0px;
-    position:relative;
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-#copy{
-    display: inline;
-    position: absolute;
-    left: 30px;
-    padding: 10px;
+.contact-form input{
+    width: 20%;
+}
+.contact-form #email{
+    width: 40%;
+}
+#msg{
+    width: 40%;
+}
+#submit{
+    outline: none;
+    border-radius: 15px;
+    padding: 5px;
+    width: 100px;
+}
+/* --------------------------------- footer --------------------------------- */
+
+.footer{
+    display: flex;
+    height: 80px;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    align-items: center;
 }
 #reds{
-    position: absolute;
-    right: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+#copy{
+    padding: 10px 20px;
 }
 #reds a i{
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
     font-size: 30px;
-    padding: 10px;
-    color: blue;
+    padding: 5px 10px;
+    color: blueviolet;
 }
 #reds a i:hover{
     color: white;
-    background-color: blue;
-    border-radius: 5px;
-}
-#msg{
-    font-family: Arial, Helvetica, sans-serif;
-    width: 300px;
-    height: 100px;
-    position: absolute;
-}
-#submit{
-    position:absolute;
-    left: 330px;
-
+    background-color: blueviolet;
 }
