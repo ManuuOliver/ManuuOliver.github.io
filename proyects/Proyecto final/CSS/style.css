@@ -30,6 +30,10 @@ h2:hover{
 body{
     margin-top: 60px;
 }
+*::selection{
+    color: whitesmoke;
+    background-color: violet;
+}
 /* --------------------------------- HEADER --------------------------------- */
 .header{
     margin-top: -60px;
@@ -80,7 +84,7 @@ nav ul li a:hover {
     background-position: -100% 100%;
     color: palevioletred;
     background-color: whitesmoke;
-    animation: subrayar 0.5s forwards;
+    animation: subrayar 0.5s ease-in-out forwards;
 }
 /* ------------------------- animacion para el hover ------------------------ */
 @keyframes subrayar {
