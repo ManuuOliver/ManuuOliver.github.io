@@ -180,6 +180,45 @@ body main{
     padding: 5px;
     width: 100px;
 }
+
+/* -------------------------------- proyects -------------------------------- */
+.proyects{
+    padding: 70px 25px;
+    box-shadow: 0 0 15px rgb(0, 0, 0, .37);
+    background-color: rgba(137, 43, 226, 0.671)
+}
+.proyects-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+.proyects-items_one{
+    transition: transform 0.4s;
+    border-radius: 5px;
+}
+.proyects-items_one:hover{
+    transform: scale(1.3);
+}
+.proyects-items_two{
+    transition: transform 0.4s;
+}
+.proyects-items_two:hover{
+    transform: scale(1.3);
+}
+.proyects-items h3{
+    color: whitesmoke;
+    font-size: 1.4em;
+}
+.proyects-items h3:hover{
+    color: rgb(59, 231, 231);
+
+}
+
+
+
+
 /* --------------------------------- footer --------------------------------- */
 
 .footer{
