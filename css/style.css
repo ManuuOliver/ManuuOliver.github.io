@@ -70,14 +70,14 @@ h1{font-size: 2.5em;}
 }
 
 .header nav ul li a{
-    color: whitesmoke;
+    color: black;
     background-color:#e7c021 ;
-    padding: 0px 3px;
+    padding: 0px 10px;
     border-radius: 5px;
     white-space: nowrap;
 }
 .header nav ul li a:hover{
-    color: white;
+    color: rgb(83, 83, 83);
 }
 /* -------------------------------- Container ------------------------------- */
 .container{
@@ -134,6 +134,19 @@ h1{font-size: 2.5em;}
     padding: 25px;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
+}
+@media screen and (max-width: 410px){
+    .header{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .banner div img{
+        max-width: 200px;
+    }
+
+    .about img{
+        height: 200px;
+    }
 }
 /*
 font-family: 'Dosis', sans-serif;
