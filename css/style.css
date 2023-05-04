@@ -114,14 +114,15 @@ h1{font-size: 2.5em;}
 .about{
     padding: 50px 20px;
     background-color: #F5EEF8;
+    border-radius: 15px;
 }
 .about img{
-    height: 200px;
+    height: 280px;
     border-radius: 20%;
     border-top-left-radius: 50%;
     border-bottom-right-radius: 50%;
     float:right;
-    margin: 0px 0 10px 24px;
+    margin: 0px 0 10px 30px;
     box-shadow: 0px 0px 8px goldenrod;
     transition: transform 1s;
 }
