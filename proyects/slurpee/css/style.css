@@ -168,6 +168,7 @@ main .front-page{
 }
 .versions-img{
     align-self:self-end;
+    justify-self: start;
 }
 .versions-img img{
     height: 250px;
