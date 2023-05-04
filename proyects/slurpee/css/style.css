@@ -234,34 +234,35 @@ font-family: 'Sigmar', cursive;
 }
 
 /* --------------------------------- Footer --------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 .footer{
-    background-color: #FF9900;
-}
-#copy a{
-    padding-left: 10px;
-    color: whitesmoke;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-.social{
-    color: whitesmoke;
-    min-height: 70px;
-    align-items: center;
+    padding: 0px 30px;
     display: flex;
+    min-height: 70px;
+    background-color: #FF9900;
     justify-content: space-between;
+    align-items: center;
 }
-#reds{
-    padding: 0px 10px;
-}
-#reds a{
-    color: white;
+.footer-copyright a{
     font-size: 1.3em;
-    padding: 5px 15px;
-    text-align: right;
+    color: whitesmoke;
+    font-family: 'Kanit', sans-serif;
 }
-#reds a:hover{
-    background-color: whitesmoke;
+.footer .footer-reds{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 30px;
+}
+.footer .footer-reds a i{
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 3px 10px;
+    color: white;
+    transition: transform 0.6s, background 0.8s, color 1s;
+}
+.footer .footer-reds a i:hover{
+    transform: scale(1.1);
     color: #FF9900;
-    border-radius: 4px;
-    font-size: 1.6em;
-    padding: 5px 20px;
+    background-color: whitesmoke;
 }

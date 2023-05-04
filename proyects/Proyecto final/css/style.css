@@ -16,7 +16,10 @@ html{
     scroll-padding-top: 65px;
     scroll-behavior: smooth;
 }
-a{text-decoration: none;}
+a{
+    text-decoration: none;
+cursor: pointer;
+}
 li{list-style: none;}
 h2{
     font-family: 'Bebas Neue', cursive;
@@ -173,43 +176,42 @@ nav ul li a:hover {
 }
 
 /* --------------------------------- Footer --------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 .footer{
-    background-color: palevioletred;
-}
-#copy a{
-    padding-left: 10px;
-    color: whitesmoke;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-.social{
-    color: whitesmoke;
-    height: 70px;
-    align-items: center;
     display: flex;
+    padding: 0px 20px;
+    min-height: 70px;
+    background-color: palevioletred;
     justify-content: space-between;
+    align-items: center;
 }
-#reds{
-    padding: 0px 10px;
+.footer-copyright a{
+    font-family: 'Kanit', sans-serif;
+    color: whitesmoke;
 }
-#reds a{
-    color: white;
+.footer .footer-reds{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 30px;
+}
+.footer .footer-reds a i{
+    border-radius: 10px;
     font-size: 1.3em;
     padding: 5px 15px;
-    text-align: right;
+    color: whitesmoke;
+    transition: transform 0.6s, background 0.8s, color 1s;
 }
-#reds a:hover{
+.footer .footer-reds a i:hover{
     background-color: whitesmoke;
     color: palevioletred;
-    border-radius: 4px;
-    font-size: 1.6em;
-    padding: 5px 20px;
+    transform: scale(1.1);
 }
 
 /* -------------------------------- Page Routines -------------------------------- */
 .plans{
     text-align: center;
-    
-    padding: 20px 25px;
+    height: 100vh;
     display: flex;
     background-color: whitesmoke;
     flex-wrap: wrap;
@@ -220,8 +222,7 @@ nav ul li a:hover {
 }
 
 .routine-plan{
-    flex-wrap: wrap;
-    width: 40%;
+    min-width: 40%;
     padding: 10px;
     margin: 20px;
     border: 5px solid palevioletred;
@@ -257,7 +258,7 @@ nav ul li a:hover {
 /* --------------------------- Fondos de rutinas --------------------------- */
 #hypertrophy-man{
     background-image:url(https://scontent.fbhi4-1.fna.fbcdn.net/v/t39.30808-6/315028639_640719917489336_917737779288603435_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=KKnZ015qZCUAX8CM0az&_nc_ht=scontent.fbhi4-1.fna&oh=00_AfCPVxFY7lK2auWVYepeDP6OweJ676wB231Mwwy2NmpiIg&oe=644E9C5A);
-    background-position: 50%;
+    background-position: center;
     background-repeat: none;
     background-size: cover;
 }
@@ -302,7 +303,6 @@ nav ul li a:hover {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    
     height: 100vh;
 }
 .contact{
@@ -480,7 +480,7 @@ nav ul li a:hover {
     justify-content: space-around;
 }
 .news-style{
-    width: 40%;
+    min-width: 40%;
 }
 .news-style iframe{
     border-radius: 10px;

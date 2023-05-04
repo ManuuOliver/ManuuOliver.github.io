@@ -36,7 +36,7 @@ h1{font-size: 2.5em;}
     padding: 5px 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     z-index: 1000;
     background-color:rgba(128, 128, 128, 0.123);
@@ -195,7 +195,7 @@ font-family: 'Ubuntu', sans-serif;
 /* --------------------------------- footer --------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 .footer{
-    margin: 0px 20px;
+    padding: 0px 20px;
     display: flex;
     min-height: 70px;
     background-color: whitesmoke;
@@ -203,6 +203,7 @@ font-family: 'Ubuntu', sans-serif;
     align-items: center;
 }
 .footer-copyright a{
+    font-size: 1.3em;
     font-family: 'Kanit', sans-serif;
 }
 .footer .footer-reds{
@@ -211,12 +212,9 @@ font-family: 'Ubuntu', sans-serif;
     flex-direction: row;
     gap: 30px;
 }
-.footer #reds a{
-    display: flex;
-}
 .footer .footer-reds a i{
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 30px;
     padding: 3px 10px;
     color: blueviolet;
     transition: transform 0.6s, background 0.8s, color 1s;
