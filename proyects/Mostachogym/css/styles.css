@@ -242,9 +242,6 @@ h2:Hover{
 }
 /* -------------------------------- Computers ------------------------------- */
 @media screen and (min-width:1024px) {
-    .header{
-        justify-content: space-between;
-    }
     .famili-images{
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(2,1fr);
@@ -262,6 +259,19 @@ h2:Hover{
     .image-four{
         display: inline;
         grid-column: span 1;
+    }
+    .testimonials{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-column-gap: 15px;
+    }
+    .testimonio{
+        max-width: 75%;
+    }
+    .maps-cover{
+        grid-row: span 3;
+        height: 100%;
     }
 }
 
