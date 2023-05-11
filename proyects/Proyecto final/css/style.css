@@ -18,14 +18,21 @@ html{
 }
 a{
     text-decoration: none;
-cursor: pointer;
+    cursor: pointer;
 }
 li{list-style: none;}
-h2{
+h2 {
     font-family: 'Bebas Neue', cursive;
     text-align: center;
     color: palevioletred;
     font-size: 3.15em;
+    margin: 16px 0px;
+}
+input:focus, textarea:focus{
+    outline: 2px solid palevioletred;
+    border-color: transparent;
+    border-radius: 5px;
+    
 }
 h2:hover{
     text-decoration: underline;
@@ -44,10 +51,9 @@ body{
     display: flex;
     position: fixed;
     align-items: center;
-    z-index: 1;
+    z-index: 100;
     width: 100%;
     justify-content: space-between;
-    height: 60px;
 }
  /* ---------------------------------- HEADER-LOGO ---------------------------------- */
 #logo{
@@ -100,7 +106,7 @@ nav ul li a:hover {
 }
 /* --------------------------------- banner de la pagina principal --------------------------------- */
 .banner{
-    background-image: url(https://scontent.fbhi4-1.fna.fbcdn.net/v/t39.30808-6/316659475_652713422956652_2724468220481152210_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=9Vlykwz8_bQAX9ZMk6_&_nc_ht=scontent.fbhi4-1.fna&oh=00_AfCrB6dijNOvhUhaE_Nw6y006PdxbSE5F_R9qIMvYaCb3A&oe=6449E5A9);
+    background-image: url(../img/bannerimage.jpg);
     background-position: 100%;
     height: 470px;
     background-repeat: no-repeat;
@@ -154,16 +160,22 @@ nav ul li a:hover {
     margin-top: 100px;
     text-align: center;
 }
-.image-class{
-    height: 27vw;
+.image{
+    height: 300px;
+    width: 300px;
     display: inline-block;
+    transition: transform 1s;
 }
-.image-class:hover{
-    position: relative;
-    top: 5px;
-    right: 5px;
-    border: 2px solid palevioletred;
+.image:hover{
+    transform: scale(1.1);
+    z-index: 50;
+    outline: 2px solid palevioletred;
     box-shadow: 4px 2px 13px rgb(165, 65, 98);
+}
+.images-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .images-h2{
     font-family: 'Bebas Neue', cursive;
@@ -211,7 +223,6 @@ nav ul li a:hover {
 /* -------------------------------- Page Routines -------------------------------- */
 .plans{
     text-align: center;
-    height: 100vh;
     display: flex;
     background-color: whitesmoke;
     flex-wrap: wrap;
@@ -300,10 +311,9 @@ nav ul li a:hover {
 /* --------------------------------- contact -------------------------------- */
 .contact-main{
     background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://scontent.fbhi4-1.fna.fbcdn.net/v/t39.30808-6/274500266_1622489741453922_6776516610836215139_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=e3f864&_nc_ohc=divB4wPOPWEAX_tlYOx&_nc_ht=scontent.fbhi4-1.fna&oh=00_AfANOgpPGgs4dYI-7h9nR7w_fUYohba66wdsPtyr-QeYIw&oe=644F2F09);
-    background-position: 50%;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
 }
 .contact{
     display: flex;
@@ -311,6 +321,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    height: 100vh;
 }
 .contact-image img{
     border-radius: 15px;
@@ -321,12 +332,14 @@ nav ul li a:hover {
 .contact-form{
     border: 3px solid palevioletred;
     display: flex;
+    max-height: 450px;
     flex-direction: column;
     box-shadow: 0px 0px 4px rgb(255, 0, 43);
     padding: 10px;
     background-color: whitesmoke;
     border-radius: 15px;
     gap: 10px;
+    max-width: 50%;
 }
 .contact-form label{
     font-family: 'Bebas Neue', cursive;
@@ -361,8 +374,8 @@ nav ul li a:hover {
 #msg{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    height: 100px;
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
 /* ---------------------------- Icono de telefono de la pagina de contactos --------------------------- */
 .telephone{

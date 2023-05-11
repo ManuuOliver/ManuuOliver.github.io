@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Josefin+Sans&family=Kanit&family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&family=Poppins&family=Quicksand&family=Raleway&display=swap');
+/*
+font-family: 'Inconsolata', monospace;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+/* --------------------------- Comandos generales --------------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --backgroundcolor:#f185a9;
+    --strongbackgroundcolor:#dd4f7e;
+    --lettercolor:#F4F6F7;
+}
+*::selection{
+    color: var(--lettercolor);
+    background-color: var(--strongbackgroundcolor);
+}
+body{
+    margin-top: 10vh;
+}
+ul{list-style: none;}
+a{
+    text-decoration: none;
+}
+a:hover{
+    cursor:pointer;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--backgroundcolor);
+    font-weight: bold;
+}
+h2:Hover{
+    text-decoration: underline;
+}
+
+
+
+
+/* --------------------------------- Header --------------------------------- */
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background-color: var(--backgroundcolor);
+    gap: 15px;
+    z-index: 100;
+    padding: 10px;
+    width: 100%;
+    position:fixed;
+    top: 0px;
+}
+.header__nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__nav ul li a{
+    color: var(--backgroundcolor);
+    padding: 2px 5px;
+    background-color: var(--lettercolor);
+    border-radius: 5px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.08rem;
+    font-weight: 700;
+    transition: background 0.8s, color 1s;
+}
+.header__nav ul li a:hover{
+    color: var(--lettercolor);
+    background-color: var(--strongbackgroundcolor);
+    outline: 2px solid var(--lettercolor);
+    
+}
+.header img{
+    height: 1.5rem;
+}
+
+/* --------------------------------- banner --------------------------------- */
+.banner{
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://scontent.fbhi4-1.fna.fbcdn.net/v/t39.30808-6/315048135_640719914156003_4998871162836392879_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=f3IsAKTfoN0AX9vJMux&_nc_ht=scontent.fbhi4-1.fna&oh=00_AfCJ6-BwZEWLDFtdju5e7iqNJ8DNoaS02lbiqJvmoo6mjw&oe=645FF038);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.banner h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: var(--strongbackgroundcolor);
+    font-weight: bold;
+    background-color: var(--lettercolor);
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    max-width: 90%;
+}
+
+/* ------------------------------ Testimonials ------------------------------ */
+.maps-cover{
+    height: 300px;
+    width: 100%;
+}
+#maps{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimonials{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    display: grid;
+    row-gap: 15px;
+    align-items: center;
+    justify-items: center;
+    margin: 25px;
+}
+.testimonio{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #E5E7E9;
+}
+.testimonio-encabezado h4{
+    font-size: 1.3em;
+}
+.testimonio-estrellas .star{
+    color: var(--backgroundcolor);
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 2px var(--strongbackgroundcolor);
+}
+.testimonio-estrellas .star:hover{
+    color: var(--strongbackgroundcolor);
+    text-shadow: 1px 1px 2px var(--backgroundcolor);
+}
+
+/* --------------------------------- Famili --------------------------------- */
+.image-three, .image-four{
+    display: none;
+}
+.famili{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 30px 20px;
+}
+.images img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+.images img:hover{
+    box-shadow: 0px 0px 15px var(--strongbackgroundcolor);
+    cursor: url(../img/cursor.png), auto;
+}
+.images{
+    height: 300px;
+    width: 100%;
+}
+.famili-images{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+/* --------------------------------- Footer --------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+.footer{
+    display: flex;
+    padding: 0px 25px;
+    min-height: 10vh;
+    flex-direction: column;
+    background-color: palevioletred;
+    justify-content: center;
+    align-items: center;
+}
+.footer-copyright a{
+    font-family: 'Kanit', sans-serif;
+    color: whitesmoke;
+    font-size: 1.3rem;
+}
+.footer .footer-reds{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 30px;
+}
+.footer .footer-reds a i{
+    border-radius: 10px;
+    font-size: 2rem;
+    padding: 3px 15px;
+    color: whitesmoke;
+    transition: transform 0.6s, background 0.8s, color 1s;
+}
+.footer .footer-reds a i:hover{
+    background-color: whitesmoke;
+    color: palevioletred;
+    transform: scale(1.1);
+}
+
+/* --------------------------------- Tablets -------------------------------- */
+@media screen and (min-width:600px) {
+    .image-three{
+        display: inline;
+        grid-column: span 2;
+    }
+    .famili-images{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .header{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+/* -------------------------------- Computers ------------------------------- */
+@media screen and (min-width:1024px) {
+    .header{
+        justify-content: space-between;
+    }
+    .famili-images{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .image-one{
+        height: 100%;
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .image-three{
+        height: 100%;
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .image-four{
+        display: inline;
+        grid-column: span 1;
+    }
+}
+
+
+
+
+
+
