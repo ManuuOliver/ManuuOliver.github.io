@@ -25,7 +25,7 @@ font-family: 'Raleway', sans-serif;
     background-color: var(--strongbackgroundcolor);
 }
 body{
-    margin-top: 8vh;
+    margin-top: 7vh;
 }
 ul{list-style: none;}
 a{
@@ -59,7 +59,7 @@ h2:Hover{
 .header-logo{
     padding: 10px;
 }
-.header nav{
+.header-nav{
     text-align: center;
 }
 .header-nav ul li a{
@@ -134,7 +134,7 @@ h2:Hover{
 /* --------------------------------- banner --------------------------------- */
 .banner{
     height: 90vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://scontent.fbhi4-1.fna.fbcdn.net/v/t39.30808-6/315048135_640719914156003_4998871162836392879_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=f3IsAKTfoN0AX9vJMux&_nc_ht=scontent.fbhi4-1.fna&oh=00_AfCJ6-BwZEWLDFtdju5e7iqNJ8DNoaS02lbiqJvmoo6mjw&oe=645FF038);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/index/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
