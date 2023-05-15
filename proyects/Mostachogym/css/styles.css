@@ -25,7 +25,7 @@ font-family: 'Raleway', sans-serif;
     background-color: var(--strongbackgroundcolor);
 }
 body{
-    margin-top: 10vh;
+    margin-top: 8vh;
 }
 ul{list-style: none;}
 a{
@@ -50,31 +50,24 @@ h2:Hover{
 
 /* --------------------------------- Header --------------------------------- */
 .header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     min-height: 10vh;
     background-color: var(--backgroundcolor);
-    gap: 15px;
-    width: 100%;
     z-index: 100;
-    padding: 5px 25px;
     position:fixed;
     top: 0px;
 }
-.header__nav ul{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    flex-wrap:wrap;
-    justify-content: center;
-    align-items: center;
+.header-logo{
+    padding: 10px;
 }
-
-.header__nav ul li a{
+.header nav{
+    text-align: center;
+}
+.header-nav ul li a{
+    display: inline-block;
     color: var(--backgroundcolor);
+    min-width: 100px;
     padding: 2px 5px;
+    margin: 5px;
     background-color: var(--lettercolor);
     border-radius: 5px;
     font-family: 'Kanit', sans-serif;
@@ -82,14 +75,60 @@ h2:Hover{
     font-weight: 700;
     transition: background 0.8s, color 1s;
 }
-.header__nav ul li a:hover{
+.header-nav ul li a:hover{
     color: var(--lettercolor);
     background-color: var(--strongbackgroundcolor);
     outline: 2px solid var(--lettercolor);
     
 }
 .header img{
-    height: 1.25rem;
+    height: 1.1rem;
+}
+.header-button{
+    border: none;
+}
+.header-button:focus{
+    border: none;
+    outline: none;
+
+}
+.header-button i{
+    color: var(--lettercolor);
+    font-size: 1.5rem;
+    }
+/* --------------------------------- Footer --------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+.footer{
+    display: flex;
+    padding: 0px 25px;
+    min-height: 10vh;
+    flex-direction: column;
+    background-color: var(--backgroundcolor);
+    justify-content: center;
+    align-items: center;
+}
+.footer-copyright a{
+    font-family: 'Kanit', sans-serif;
+    color: whitesmoke;
+    font-size: 1.3rem;
+}
+.footer .footer-reds{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 30px;
+}
+.footer .footer-reds a i{
+    border-radius: 10px;
+    font-size: 2rem;
+    padding: 3px 15px;
+    color: whitesmoke;
+    transition: transform 0.6s, background 0.8s, color 1s;
+}
+.footer .footer-reds a i:hover{
+    background-color: whitesmoke;
+    color: palevioletred;
+    transform: scale(1.1);
 }
 
 /* --------------------------------- banner --------------------------------- */
@@ -171,10 +210,13 @@ h2:Hover{
     height: 100%;
     width: 100%;
     border-radius: 15px;
+    transition: transform 1s;
 }
 .images img:hover{
     box-shadow: 0px 0px 15px var(--strongbackgroundcolor);
-    cursor: url(../img/cursor.png), auto;
+    cursor: url(../img/Cursores/cursor.png), auto;
+    transform: scale(1.05);
+    z-index: 50;
 }
 .images{
     height: 300px;
@@ -185,40 +227,87 @@ h2:Hover{
     flex-direction: column;
     gap: 25px;
 }
-/* --------------------------------- Footer --------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-.footer{
+/* ------------------------------ Page routines ----------------------------- */
+.routines{
+    padding: 20px 25px;
     display: flex;
-    padding: 0px 25px;
-    min-height: 10vh;
     flex-direction: column;
-    background-color: palevioletred;
-    justify-content: center;
-    align-items: center;
+    gap: 20px;
+    min-height: 90vh;
 }
-.footer-copyright a{
-    font-family: 'Kanit', sans-serif;
-    color: whitesmoke;
-    font-size: 1.3rem;
-}
-.footer .footer-reds{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    gap: 30px;
-}
-.footer .footer-reds a i{
+.routine-list{
+    width: 100%;
+    min-height: 250px;
+    text-align: center;
+    background-color: black;
     border-radius: 10px;
-    font-size: 2rem;
-    padding: 3px 15px;
-    color: whitesmoke;
-    transition: transform 0.6s, background 0.8s, color 1s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
 }
-.footer .footer-reds a i:hover{
+.routine-list a{
+    font-size: 1.4rem;
+    color: var(--backgroundcolor);
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.routine-list ol{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 10px;
+    color: var(--lettercolor);
+    list-style-position: inside;
+    list-style:circle;
+}
+.routine-list ol li{
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0px;
+    font-size: 1.1rem;
+}
+.routine-list ol li:hover{
+    font-weight: bold;
+}
+.routine-one{
+    background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url(../img/routines/hipertrofiahombre.jpg);
+}
+.routine-two{
+    background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),url(../img/routines/hipertrofiamujer.jpg);
+}
+.routine-three{
+    background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),url(../img/routines/fuerzadeportista.jpg);
+}
+.routine-four{
+    background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),url(../img/routines/hipertrofia.jpg);
+}
+/* --------------------------------- Contact -------------------------------- */
+.contact-main{
     background-color: whitesmoke;
-    color: palevioletred;
-    transform: scale(1.1);
+    height: 90vh;
 }
+.contact-image{
+    display: none;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+
+}
+.telephone{
+    position: fixed;
+    bottom:12vh;
+    right: 10px;
+}
+.telephone img{
+    height: 70px;
+}
+
+
+
 
 /* --------------------------------- Tablets -------------------------------- */
 @media screen and (min-width:600px) {
@@ -238,10 +327,26 @@ h2:Hover{
     .header{
         flex-direction: row;
         justify-content: space-between;
+        padding: 0px 15px;
+    }
+    .routines{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    .routine-list a{
+        font-size: 1.5rem;
+    }
+    .routine-list ol li{
+        font-size: 1.2rem;
     }
 }
 /* -------------------------------- Computers ------------------------------- */
 @media screen and (min-width:1024px) {
+    .header{
+        justify-content: space-around;
+        padding: 0;
+    }
     .famili-images{
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(2,1fr);
@@ -272,6 +377,25 @@ h2:Hover{
     .maps-cover{
         grid-row: span 3;
         height: 100%;
+    }
+    .routines{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+    }
+    .routine-list a{
+        font-size: 1.7rem;
+    }
+    .routine-list ol{
+        min-height: 70vh;
+        padding: 10px;
+        gap: 70px;
+    }
+    .routine-list ol li{
+        font-size: 1.4rem;
+    }
+    .routine-list ol li:hover{
+        font-weight: bold;
     }
 }
 
