@@ -25,7 +25,7 @@ font-family: 'Raleway', sans-serif;
     background-color: var(--strongbackgroundcolor);
 }
 body{
-    margin-top: 7vh;
+    margin-top: 8vh;
 }
 ul{list-style: none;}
 a{
@@ -286,25 +286,169 @@ h2:Hover{
 }
 /* --------------------------------- Contact -------------------------------- */
 .contact-main{
+    height: calc(100vh - 10vh);
     background-color: whitesmoke;
-    height: 90vh;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
 }
 .contact-image{
     display: none;
 }
+/*
+font-family: 'Inconsolata', monospace;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
 .contact-form{
+    padding: 25px 25px;
     display: flex;
     flex-direction: column;
-
+    gap: 20px;
+    background-color: #f3e9ec;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: var(--strongbackgroundcolor);
+    outline: 2px solid var(--backgroundcolor);
+    border-radius: 20px;
+    width: 90%;
+}
+.contact-form input{
+    width: 60%;
+    outline: none;
+    border: 1px solid var(--backgroundcolor);
+    border-radius: 5px;
+    font-size: 0.95rem;
+    height: 30px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: transform .3s;
+}
+.contact-form input:hover{
+    transform: scale(1.1);
+    outline: 1px solid var(--strongbackgroundcolor);
+}
+.contact-form #email{
+    width: 80%;
+}
+#msg{
+    max-width: 90%;
+    max-height: 200px;
+    border: 1px solid var(--backgroundcolor);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#msg::placeholder{
+    font-size: 1.1rem;
+}
+#msg:focus{
+    outline: 1px solid var(--strongbackgroundcolor);
 }
 .telephone{
     position: fixed;
     bottom:12vh;
-    right: 10px;
+    right: 3px;
 }
 .telephone img{
     height: 70px;
 }
+#submit{
+    margin: auto;
+    min-width: 150px;
+    height: 30px;
+}
+/* -------------------------------- Timetable ------------------------------- */
+.schedules{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.schedules-section{
+    width: 100%;
+}
+/* ------------------------------ Timetable NAV ----------------------------- */
+.shedules-section-nav{
+    padding: 20px 0px;
+    background-color: #db688f;
+    border-radius: 30px;
+    display: none;
+}
+.shedules-section-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.shedules-section-nav ul li a{
+    border-right: 1px solid rgba(255, 192, 203, 0.603);
+    border-left: 1px solid rgba(255, 192, 203, 0.603);
+    color: whitesmoke;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    flex-direction: row;
+}
+.shedules-section-nav ul li a:hover{
+    background-color: whitesmoke;
+    color: palevioletred;
+    font-weight: bold;
+}
+
+/* --------------------------- Horarios de los diferentes entrenamientos --------------------------- */
+.section-training{
+    padding: 20px 25px;
+    width: 100%;
+    background-color: whitesmoke;
+    transition: 0.4s;
+}
+.section-training:hover{
+    background-color: rgb(241, 227, 229);
+    border-top-right-radius: 40%;
+}
+.training-schedules{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px 0px;
+    width: 100%;
+}
+.training-schedules h3{
+    font-size: 1.35em;
+    color: whitesmoke;
+    background-color: palevioletred;
+    display: inline-block;
+    border-radius: 7px;
+    padding: 3px 5px;
+}
+.training-schedules ul li{
+    color:rgb(48, 47, 47);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+.schedules-hour{
+    color: palevioletred;
+    text-decoration: underline;
+    padding: 0px 5px;
+    text-shadow: 0px 0px 5px pink;
+}
+.schedules-hour:hover{
+    color: whitesmoke;
+    background-color: palevioletred;
+    border-radius: 5px;
+}
+
 
 
 
@@ -339,6 +483,9 @@ h2:Hover{
     }
     .routine-list ol li{
         font-size: 1.2rem;
+    }
+    .shedules-section-nav{
+        display: block;
     }
 }
 /* -------------------------------- Computers ------------------------------- */
