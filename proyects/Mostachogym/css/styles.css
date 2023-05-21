@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Josefin+Sans&family=Kanit&family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&family=Poppins&family=Quicksand&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Josefin+Sans&family=Kanit&family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&family=Poppins&family=Quicksand&family=Raleway&family=Ubuntu&display=swap');
+
 /*
 font-family: 'Inconsolata', monospace;
 font-family: 'Josefin Sans', sans-serif;
@@ -12,39 +13,49 @@ font-family: 'Quicksand', sans-serif;
 font-family: 'Raleway', sans-serif;
 */
 /* --------------------------- Comandos generales --------------------------- */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    --backgroundcolor:#f185a9;
-    --strongbackgroundcolor:#dd4f7e;
-    --lettercolor:#F4F6F7;
+    --backgroundcolor: #f185a9;
+    --strongbackgroundcolor: #dd4f7e;
+    --lettercolor: #F4F6F7;
 }
-*::selection{
+
+*::selection {
     color: var(--lettercolor);
     background-color: var(--strongbackgroundcolor);
 }
-body{
+
+body {
     margin-top: 8vh;
 }
-ul{list-style: none;}
-a{
+
+ul {
+    list-style: none;
+}
+
+a {
     text-decoration: none;
 }
-a:hover{
-    cursor:pointer;
+
+a:hover {
+    cursor: pointer;
 }
-h2{
+
+h2 {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 2.5rem;
     color: var(--backgroundcolor);
     font-weight: bold;
 }
-h2:Hover{
+
+h2:Hover {
     text-decoration: underline;
 }
-html{
+
+html {
     scroll-padding-top: 11vh;
     scroll-behavior: smooth;
 }
@@ -53,21 +64,24 @@ html{
 
 
 /* --------------------------------- Header --------------------------------- */
-.header{
+.header {
     min-height: 10vh;
     background-color: var(--backgroundcolor);
     z-index: 100;
-    position:fixed;
+    position: fixed;
     top: 0px;
     box-shadow: 0px 1px 7px var(--strongbackgroundcolor);
 }
-.header-logo{
+
+.header-logo {
     padding: 10px;
 }
-.header-nav{
+
+.header-nav {
     text-align: center;
 }
-.header-nav ul li a{
+
+.header-nav ul li a {
     display: inline-block;
     color: var(--backgroundcolor);
     min-width: 100px;
@@ -80,30 +94,37 @@ html{
     font-weight: 700;
     transition: background 0.8s, color 1s;
 }
-.header-nav ul li a:hover{
+
+.header-nav ul li a:hover {
     color: var(--lettercolor);
     background-color: var(--strongbackgroundcolor);
     outline: 2px solid var(--lettercolor);
-    
+
 }
-.header img{
+
+.header img {
     height: 1.1rem;
 }
-.header-button{
+
+.header-button {
     border: none;
 }
-.header-button:focus{
+
+.header-button:focus {
     border: none;
     outline: none;
 
 }
-.header-button i{
+
+.header-button i {
     color: var(--lettercolor);
     font-size: 1.5rem;
-    }
+}
+
 /* --------------------------------- Footer --------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-.footer{
+
+.footer {
     display: flex;
     padding: 0px 25px;
     min-height: 10vh;
@@ -112,32 +133,36 @@ html{
     justify-content: center;
     align-items: center;
 }
-.footer-copyright a{
+
+.footer-copyright a {
     font-family: 'Kanit', sans-serif;
     color: whitesmoke;
     font-size: 1.3rem;
 }
-.footer .footer-reds{
+
+.footer .footer-reds {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     gap: 30px;
 }
-.footer .footer-reds a i{
+
+.footer .footer-reds a i {
     border-radius: 10px;
     font-size: 2rem;
     padding: 3px 15px;
     color: whitesmoke;
     transition: transform 0.6s, background 0.8s, color 1s;
 }
-.footer .footer-reds a i:hover{
+
+.footer .footer-reds a i:hover {
     background-color: whitesmoke;
     color: palevioletred;
     transform: scale(1.1);
 }
 
 /* --------------------------------- banner --------------------------------- */
-.banner{
+.banner {
     height: 90vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/index/banner.jpg);
     background-repeat: no-repeat;
@@ -145,9 +170,10 @@ html{
     background-position: center;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
-.banner h1{
+
+.banner h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     color: var(--strongbackgroundcolor);
@@ -160,16 +186,18 @@ html{
 }
 
 /* ------------------------------ Testimonials ------------------------------ */
-.maps-cover{
+.maps-cover {
     height: 300px;
     width: 100%;
 }
-#maps{
+
+#maps {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.testimonials{
+
+.testimonials {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     display: grid;
@@ -178,31 +206,37 @@ html{
     justify-items: center;
     margin: 25px;
 }
-.testimonio{
+
+.testimonio {
     display: block;
     width: 100%;
     padding: 10px;
     border-radius: 15px;
     background-color: #E5E7E9;
 }
-.testimonio-encabezado h4{
+
+.testimonio-encabezado h4 {
     font-size: 1.3em;
 }
-.testimonio-estrellas .star{
+
+.testimonio-estrellas .star {
     color: var(--backgroundcolor);
     font-size: 1.3rem;
     text-shadow: 1px 1px 2px var(--strongbackgroundcolor);
 }
-.testimonio-estrellas .star:hover{
+
+.testimonio-estrellas .star:hover {
     color: var(--strongbackgroundcolor);
     text-shadow: 1px 1px 2px var(--backgroundcolor);
 }
 
 /* --------------------------------- Famili --------------------------------- */
-.image-three, .image-four{
+.image-three,
+.image-four {
     display: none;
 }
-.famili{
+
+.famili {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -210,37 +244,43 @@ html{
     gap: 25px;
     padding: 30px 20px;
 }
-.images img{
+
+.images img {
     object-fit: cover;
     height: 100%;
     width: 100%;
     border-radius: 15px;
     transition: transform 1s;
 }
-.images img:hover{
+
+.images img:hover {
     box-shadow: 0px 0px 15px var(--strongbackgroundcolor);
     cursor: url(../img/Cursores/cursor.png), auto;
     transform: scale(1.05);
     z-index: 50;
 }
-.images{
+
+.images {
     height: 300px;
     width: 100%;
 }
-.famili-images{
+
+.famili-images {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
+
 /* ------------------------------ Page routines ----------------------------- */
-.routines{
+.routines {
     padding: 20px 25px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     min-height: 90vh;
 }
-.routine-list{
+
+.routine-list {
     width: 100%;
     min-height: 250px;
     text-align: center;
@@ -251,60 +291,71 @@ html{
     background-size: cover;
     padding: 10px;
 }
-.routine-list a{
+
+.routine-list a {
     font-size: 1.4rem;
     color: var(--backgroundcolor);
     padding: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
-.routine-list ol{
+
+.routine-list ol {
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     gap: 10px;
     color: var(--lettercolor);
     list-style-position: inside;
-    list-style:circle;
+    list-style: circle;
 }
-.routine-list ol li{
+
+.routine-list ol li {
     font-family: 'Montserrat', sans-serif;
     margin: 10px 0px;
     font-size: 1.1rem;
 }
-.routine-list ol li:hover{
+
+.routine-list ol li:hover {
     font-weight: bold;
 }
-.routine-one{
-    background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url(../img/routines/hipertrofiahombre.jpg);
+
+.routine-one {
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url(../img/routines/hipertrofiahombre.jpg);
 }
-.routine-two{
-    background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),url(../img/routines/hipertrofiamujer.jpg);
+
+.routine-two {
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url(../img/routines/hipertrofiamujer.jpg);
 }
-.routine-three{
-    background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),url(../img/routines/fuerzadeportista.jpg);
+
+.routine-three {
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url(../img/routines/fuerzadeportista.jpg);
 }
-.routine-four{
-    background-image: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),url(../img/routines/hipertrofia.jpg);
+
+.routine-four {
+    background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url(../img/routines/hipertrofia.jpg);
 }
+
 /* --------------------------------- Contact -------------------------------- */
-.contact-main{
+.contact-main {
     min-height: 90vh;
     display: flex;
     width: 100%;
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0, 0, 0, .5)),url(https://scontent.fbhi4-1.fna.fbcdn.net/v/t39.30808-6/274500266_1622489741453922_6776516610836215139_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=e3f864&_nc_ohc=fca7WTzXEEkAX9bM5Yv&_nc_ht=scontent.fbhi4-1.fna&oh=00_AfD-lytQEsYsmbGtqgfk9Ple-q-WPqP3Xe9T9dXf-LzDiA&oe=646ADE89);
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://scontent.fbhi4-1.fna.fbcdn.net/v/t39.30808-6/274500266_1622489741453922_6776516610836215139_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=e3f864&_nc_ohc=fca7WTzXEEkAX9bM5Yv&_nc_ht=scontent.fbhi4-1.fna&oh=00_AfD-lytQEsYsmbGtqgfk9Ple-q-WPqP3Xe9T9dXf-LzDiA&oe=646ADE89);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.contact-image{
+
+.contact-image {
     display: none;
 }
+
 /*
 font-family: 'Inconsolata', monospace;
 font-family: 'Josefin Sans', sans-serif;
@@ -317,7 +368,7 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Quicksand', sans-serif;
 font-family: 'Raleway', sans-serif;
 */
-.contact-form{
+.contact-form {
     padding: 25px 25px;
     display: flex;
     flex-direction: column;
@@ -331,7 +382,8 @@ font-family: 'Raleway', sans-serif;
     width: 90%;
     max-width: 600px;
 }
-.contact-form input{
+
+.contact-form input {
     width: 60%;
     max-width: 200px;
     outline: none;
@@ -343,17 +395,21 @@ font-family: 'Raleway', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
     transition: transform .3s;
 }
-.contact-form input:hover{
+
+.contact-form input:hover {
     transform: scale(1.05);
     outline: 1px solid var(--strongbackgroundcolor);
 }
-.contact-form #email{
+
+.contact-form #email {
     max-width: 350px;
 }
-    .contact-form{
-        max-width: 600px;
-    }
-#msg{
+
+.contact-form {
+    max-width: 600px;
+}
+
+#msg {
     max-width: 90%;
     max-height: 200px;
     border: 1px solid var(--backgroundcolor);
@@ -361,54 +417,64 @@ font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     font-family: 'Josefin Sans', sans-serif;
 }
-#msg::placeholder{
+
+#msg::placeholder {
     font-size: 1.1rem;
 }
-#msg:focus{
+
+#msg:focus {
     outline: 1px solid var(--strongbackgroundcolor);
 }
-.telephone{
+
+.telephone {
     position: fixed;
-    bottom:12vh;
+    bottom: 12vh;
     right: 3px;
 }
-.telephone img{
+
+.telephone img {
     height: 70px;
     transition: transform .3s;
 }
-.telephone img:hover{
+
+.telephone img:hover {
     transform: scale(1.05);
 }
-#submit{
+
+#submit {
     margin: auto;
     min-width: 150px;
     height: 30px;
     color: var(--strongbackgroundcolor);
     transition: .4s;
 }
-#submit:hover{
+
+#submit:hover {
     transform: scale(1.05);
     background-color: var(--backgroundcolor);
     color: var(--lettercolor);
 
 }
+
 /* -------------------------------- Timetable ------------------------------- */
-.schedules{
+.schedules {
     display: flex;
     flex-wrap: wrap;
 }
 
-.schedules-section{
+.schedules-section {
     width: 100%;
 }
+
 /* ------------------------------ Timetable NAV ----------------------------- */
-.shedules-section-nav{
+.shedules-section-nav {
     padding: 20px 0px;
     background-color: #db688f;
     border-radius: 30px;
     display: none;
 }
-.shedules-section-nav ul{
+
+.shedules-section-nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -416,7 +482,8 @@ font-family: 'Raleway', sans-serif;
     gap: 15px;
     flex-wrap: wrap;
 }
-.shedules-section-nav ul li a{
+
+.shedules-section-nav ul li a {
     border-right: 1px solid rgba(255, 192, 203, 0.603);
     border-left: 1px solid rgba(255, 192, 203, 0.603);
     color: whitesmoke;
@@ -426,29 +493,33 @@ font-family: 'Raleway', sans-serif;
     border-radius: 5px;
     flex-direction: row;
 }
-.shedules-section-nav ul li a:hover{
+
+.shedules-section-nav ul li a:hover {
     background-color: whitesmoke;
     color: palevioletred;
     font-weight: bold;
 }
 
 /* --------------------------- Horarios de los diferentes entrenamientos --------------------------- */
-.section-training{
+.section-training {
     padding: 20px 25px;
     width: 100%;
     background-color: #f5f5f5;
     transition: 0.4s;
 }
-.section-training:hover{
+
+.section-training:hover {
     background-color: #f1e3e5;
     border-top-right-radius: 40%;
 }
-.training-schedules{
+
+.training-schedules {
     font-family: 'Ubuntu', sans-serif;
     margin: 10px 0px;
     width: 100%;
 }
-.training-schedules h3{
+
+.training-schedules h3 {
     font-size: 1.35em;
     color: #f5f5f5;
     background-color: #d87093;
@@ -456,29 +527,33 @@ font-family: 'Raleway', sans-serif;
     border-radius: 7px;
     padding: 3px 5px;
 }
-.training-schedules ul li{
-    color:rgb(48, 47, 47);
+
+.training-schedules ul li {
+    color: rgb(48, 47, 47);
     font-family: 'Bebas Neue', cursive;
     font-size: 1.2em;
     text-decoration: underline;
 }
-.schedules-hour{
+
+.schedules-hour {
     color: #d87093;
     text-decoration: underline;
     padding: 0px 5px;
     text-shadow: 0px 0px 5px #ffc0cb;
 }
-.schedules-hour:hover{
+
+.schedules-hour:hover {
     color: whitesmoke;
     background-color: #d87093;
     border-radius: 5px;
 }
 
 /* ---------------------------------- News ---------------------------------- */
-.sections-news-tablet{
+.sections-news-tablet {
     display: none;
 }
-.section-news{
+
+.section-news {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -487,14 +562,16 @@ font-family: 'Raleway', sans-serif;
     padding: 20px;
     gap: 25px;
 }
-.news-item{
+
+.news-item {
     width: 100%;
     height: 400px;
     outline: 3px solid var(--backgroundcolor);
     outline-style: dashed;
     padding: 10px;
 }
-.news-item iframe{
+
+.news-item iframe {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -503,132 +580,158 @@ font-family: 'Raleway', sans-serif;
 
 /* --------------------------------- Tablets -------------------------------- */
 @media screen and (min-width:600px) {
-    .image-three{
+    .image-three {
         display: inline;
         grid-column: span 2;
     }
-    .famili-images{
+
+    .famili-images {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2,1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
-    .footer{
+
+    .footer {
         flex-direction: row;
         justify-content: space-between;
     }
-    .header{
+
+    .header {
         flex-direction: row;
         justify-content: space-between;
         padding: 0px 15px;
     }
-    .routines{
+
+    .routines {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
     }
-    .routine-list a{
+
+    .routine-list a {
         font-size: 1.5rem;
     }
-    .routine-list ol li{
+
+    .routine-list ol li {
         font-size: 1.2rem;
     }
-    .shedules-section-nav{
+
+    .shedules-section-nav {
         display: block;
     }
 
-    .section-news{
+    .section-news {
         display: none;
     }
-    .sections-news-tablet{
+
+    .sections-news-tablet {
         display: block;
         min-height: 100vh;
         width: 100%;
         margin: auto;
         background-color: #f5f5f5;
     }
-    .news-list-tablet{
+
+    .news-list-tablet {
         padding: 20px;
         margin: 0 auto;
         width: 100%;
     }
-    .news-items-tablet{
+
+    .news-items-tablet {
         height: 80vh;
         margin: auto;
         width: 100%;
     }
-    .news-items-tablet iframe{
+
+    .news-items-tablet iframe {
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
 }
+
 /* -------------------------------- Computers ------------------------------- */
 @media screen and (min-width:1024px) {
-    .header{
+    .header {
         justify-content: space-around;
         padding: 0;
     }
-    .famili-images{
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,1fr);
+
+    .famili-images {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
-    .image-one{
+
+    .image-one {
         height: 100%;
         grid-column: span 1;
         grid-row: span 2;
     }
-    .image-three{
+
+    .image-three {
         height: 100%;
         grid-column: span 1;
         grid-row: span 2;
     }
-    .image-four{
+
+    .image-four {
         display: inline;
         grid-column: span 1;
     }
-    .testimonials{
+
+    .testimonials {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 15px;
     }
-    .testimonio{
+
+    .testimonio {
         max-width: 75%;
     }
-    .maps-cover{
+
+    .maps-cover {
         grid-row: span 3;
         height: 100%;
     }
-    .routines{
+
+    .routines {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
     }
-    .routine-list a{
+
+    .routine-list a {
         font-size: 1.7rem;
     }
-    .routine-list ol{
+
+    .routine-list ol {
         min-height: 70vh;
         padding: 10px;
         gap: 70px;
     }
-    .routine-list ol li{
+
+    .routine-list ol li {
         font-size: 1.4rem;
     }
-    .routine-list ol li:hover{
+
+    .routine-list ol li:hover {
         font-weight: bold;
     }
 
-    .contact-main{
+    .contact-main {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: .2fr .5fr;
         gap: 20px;
     }
-    .contact-main h2{
+
+    .contact-main h2 {
         grid-column: span 2;
     }
-    .contact-image{
+
+    .contact-image {
         display: block;
         height: 80%;
         max-width: 700px;
@@ -637,16 +740,11 @@ font-family: 'Raleway', sans-serif;
         justify-self: center;
         align-self: center;
     }
-    .contact-image img{
+
+    .contact-image img {
         height: 100%;
         width: 100%;
         object-fit: cover;
         border-radius: 15px;
     }
 }
-
-
-
-
-
-
