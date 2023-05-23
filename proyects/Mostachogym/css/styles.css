@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Josefin+Sans&family=Kanit&family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&family=Poppins&family=Quicksand&family=Raleway&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata&family=Josefin+Sans&family=Kanit&family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&family=Poppins&family=Quicksand&family=Raleway&family=Ubuntu&display=swap');
 
 /*
 font-family: 'Inconsolata', monospace;
@@ -356,18 +356,6 @@ html {
     display: none;
 }
 
-/*
-font-family: 'Inconsolata', monospace;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Kanit', sans-serif;
-font-family: 'Lato', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Quicksand', sans-serif;
-font-family: 'Raleway', sans-serif;
-*/
 .contact-form {
     padding: 25px 25px;
     display: flex;
@@ -549,32 +537,32 @@ font-family: 'Raleway', sans-serif;
 }
 
 /* ---------------------------------- News ---------------------------------- */
-.sections-news-tablet {
+
+.section-news{
     display: none;
 }
 
-.section-news {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+.sections-news-tablet{
     width: 100%;
-    padding: 20px;
-    gap: 25px;
+    height: 80vh;
+}
+.news-items-tablet{
+    background-color: var(--lettercolor);
 }
 
-.news-item {
+.news-items-tablet {
     width: 100%;
-    height: 400px;
-    outline: 3px solid var(--backgroundcolor);
-    outline-style: dashed;
+    height: 500px;
     padding: 10px;
 }
 
-.news-item iframe {
+.news-items-tablet iframe {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    padding: 5px;
+    outline: 3px solid var(--backgroundcolor);
+    outline-style: dashed;
 }
 
 
@@ -619,36 +607,12 @@ font-family: 'Raleway', sans-serif;
     .shedules-section-nav {
         display: block;
     }
-
-    .section-news {
-        display: none;
+    .news-button-tablet span{
+        background-color: rgba(0, 0, 0, .15);
+        border-radius: 50%;
+        padding: 2px;
     }
-
-    .sections-news-tablet {
-        display: block;
-        min-height: 100vh;
-        width: 100%;
-        margin: auto;
-        background-color: #f5f5f5;
-    }
-
-    .news-list-tablet {
-        padding: 20px;
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .news-items-tablet {
-        height: 80vh;
-        margin: auto;
-        width: 100%;
-    }
-
-    .news-items-tablet iframe {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
+    
 }
 
 /* -------------------------------- Computers ------------------------------- */
@@ -746,5 +710,32 @@ font-family: 'Raleway', sans-serif;
         width: 100%;
         object-fit: cover;
         border-radius: 15px;
+    }
+
+    .sections-news-tablet{
+        display: none;
+    }
+    .section-news{
+        display: block;
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,.5fr);
+        padding: 20px 25px;
+        background-color: var(--lettercolor);
+        border-radius: 15px;
+    }
+    .news-item{
+        min-height: 500px;
+        width: 100%;
+        padding: 15px;
+
+    }
+    .news-item iframe{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        outline: 3px dashed var(--strongbackgroundcolor);
+        padding: 5px;
     }
 }
