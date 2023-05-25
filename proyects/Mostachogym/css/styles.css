@@ -346,7 +346,7 @@ html {
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://scontent.fbhi4-1.fna.fbcdn.net/v/t39.30808-6/274500266_1622489741453922_6776516610836215139_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=e3f864&_nc_ohc=fca7WTzXEEkAX9bM5Yv&_nc_ht=scontent.fbhi4-1.fna&oh=00_AfD-lytQEsYsmbGtqgfk9Ple-q-WPqP3Xe9T9dXf-LzDiA&oe=646ADE89);
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/contact/fondo-contacto.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -565,6 +565,12 @@ html {
     outline-style: dashed;
 }
 
+.news-button-tablet span{
+    background-color: rgba(0, 0, 0, .15);
+    border-radius: 50%;
+    padding: 2px;
+}
+
 
 /* --------------------------------- Tablets -------------------------------- */
 @media screen and (min-width:600px) {
@@ -607,12 +613,36 @@ html {
     .shedules-section-nav {
         display: block;
     }
-    .news-button-tablet span{
-        background-color: rgba(0, 0, 0, .15);
-        border-radius: 50%;
-        padding: 2px;
+
+    .sections-news-tablet{
+        display: none;
     }
     
+    .section-news{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding: 20px 25px;
+        background-color: var(--lettercolor);
+        border-radius: 15px;
+        min-height: 100vh;
+    }
+    .news-item{
+        width: 100%;
+    }
+    .news-item-one{
+        grid-row: span 3;
+    }
+    .news-item-one iframe{
+        padding-top: 100px;
+    }
+
+    .news-item iframe{
+        height: 100%;
+        width: 100%;
+        object-fit:cover;
+        outline: 3px dashed var(--strongbackgroundcolor);
+    }
 }
 
 /* -------------------------------- Computers ------------------------------- */
@@ -712,30 +742,5 @@ html {
         border-radius: 15px;
     }
 
-    .sections-news-tablet{
-        display: none;
-    }
-    .section-news{
-        display: block;
-        min-height: 100vh;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(3,.5fr);
-        padding: 20px 25px;
-        background-color: var(--lettercolor);
-        border-radius: 15px;
-    }
-    .news-item{
-        min-height: 500px;
-        width: 100%;
-        padding: 15px;
-
-    }
-    .news-item iframe{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        outline: 3px dashed var(--strongbackgroundcolor);
-        padding: 5px;
-    }
+    
 }
