@@ -1,0 +1,229 @@
+/*
+font-family: 'Bruno Ace', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'Darumadrop One', cursive;
+font-family: 'Mukta', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Sigmar', cursive;
+*/
+/* ---------------------------- General commands ---------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    --main-color: #FF9900;
+    --secondary-color: #FFD740;
+    --Typography-color: #ffffff;
+}
+
+*::selection {
+    color: var(--Typography-color);
+    background-color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* --------------------------------- Header --------------------------------- */
+
+.header {
+    background-color: var(--main-color);
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+}
+
+.header-logo {
+    margin: auto;
+    transition: transform .4s;
+}
+
+.header-logo:hover {
+    transform: scale(1.1);
+}
+
+.header-logo img {
+    height: 70px;
+}
+
+.header-nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-nav ul li {
+    transition: transform .4s;
+}
+
+.header-nav ul li:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.header-nav ul li a {
+    color: var(--Typography-color);
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.15rem;
+    border-right: 1px solid var(--secondary-color);
+    border-left: 1px solid var(--secondary-color);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* --------------------------------- Banner --------------------------------- */
+.main-banner {
+    background-image: url(../img/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.banner-img {
+    display: none;
+}
+
+.main-banner h1 {
+    font-family: 'Bruno Ace', cursive;
+    color: var(--Typography-color);
+    text-shadow: 0px 0px 5px #252525;
+    font-size: 3rem;
+}
+
+.download-btn {
+    transition: transform .4s;
+}
+
+.download-btn:hover {
+    transform: scale(1.1);
+}
+
+.download-btn a {
+    color: var(--Typography-color);
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 15px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+}
+
+.download-btn a:hover {
+    color: var(--main-color);
+    background-color: var(--Typography-color);
+}
+
+/* ----------------------------- Caracteristicas ---------------------------- */
+
+.features {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #f5f5f5;
+}
+
+.features-text {
+    background-color: var(--secondary-color);
+    outline: 2px solid var(--main-color);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.features-text p{
+    font-family: 'Comfortaa', cursive;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.text-one-img {
+    padding: 10px;
+}
+
+.features-text-one img {
+    float: left;
+    border-radius: 15px;
+    outline: 2px solid var(--main-color);
+    margin-right: 5px;
+}
+
+.features-text-two img {
+    display: none;
+}
+
+/* -------------------------------- Versions -------------------------------- */
+.versions{
+    background-color: var(--secondary-color);
+    padding: 40px 20px;
+    outline: 2px solid var(--main-color);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/*
+font-family: 'Bruno Ace', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'Darumadrop One', cursive;
+font-family: 'Mukta', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Sigmar', cursive;
+*/
+.versions h2{
+    font-family: 'Bruno Ace', cursive;
+    color: var(--Typography-color);
+    text-decoration: underline;
+    font-size: 2.5rem;
+    text-shadow: 0px 0px 5px #25252598;
+}
+
+.versions-img{
+    display: none;
+}
+
+.versions-h3{
+    display: inline-block;
+}
+.versions-h3 h3{
+    color: var(--Typography-color);
+    background-color: var(--main-color);
+    padding: 4px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Comfortaa', cursive;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.versions-h3 a{
+    color: var(--main-color);
+    background-color: var(--Typography-color);
+    padding: 4px;
+    border-radius: 5px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.versions-h3 a::after {
+    content: " (In progress)";
+}

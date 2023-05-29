@@ -29,6 +29,7 @@ font-family: 'Raleway', sans-serif;
 
 body {
     margin-top: 8vh;
+    justify-content: space-between;
 }
 
 ul {
