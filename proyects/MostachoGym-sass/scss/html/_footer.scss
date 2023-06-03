@@ -1,0 +1,37 @@
+//Import
+@import "../utilidades/variables";
+
+/* --------------------------------- Footer --------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+.footer {
+    display: flex;
+    padding: 0px 25px;
+    min-height: 10vh;
+    flex-direction: column;
+    background-color: $backgroundcolor;
+    justify-content: center;
+    align-items: center;
+    .footer-copyright a {
+        font-family: 'Kanit', sans-serif;
+        color: #f5f5f5;
+        font-size: 1.3rem;
+    }
+    .footer-reds {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 30px;
+        a i {
+            border-radius: 10px;
+            font-size: 2rem;
+            padding: 3px 15px;
+            color: whitesmoke;
+            transition: transform .6s, background .8s, color 1s;
+        }
+        a i:hover {
+            background-color: whitesmoke;
+            color: palevioletred;
+            transform: scale(1.1);
+        }
+    }
+}

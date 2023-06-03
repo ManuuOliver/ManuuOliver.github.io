@@ -1,0 +1,86 @@
+// import
+@import "../utilidades/variables";
+
+/* -------------------------------- TimeTable ------------------------------- */
+
+.schedules {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.schedules-section {
+    .shedules-section-nav {
+        padding: 20px 0px;
+        background-color: $backgroundcolor;
+        border-radius: 30px;
+        display: none;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-evenly;
+            gap: 15px;
+            flex-wrap: wrap;
+            li {
+                a {
+                border-right: 1px solid rgba(255, 192, 203, 0.603);
+                border-left: 1px solid rgba(255, 192, 203, 0.603);
+                color: $lettercolor;
+                font-size: 1.1em;
+                font-family: 'Montserrat', sans-serif;
+                padding: 5px;
+                border-radius: 5px;
+                flex-direction: row;
+                
+            }
+            a:hover {
+                background-color: $lettercolor;
+                color: $backgroundcolor;
+                font-weight: bold;
+            }
+        } 
+    }
+} 
+}
+/* --------------------------- Horarios de los diferentes entrenamientos --------------------------- */
+.section-training {
+    padding: 20px 25px;
+    width: 100%;
+    background-color: $lettercolor;
+    transition: 0.4s;
+    .training-schedules {
+        font-family: 'Ubuntu', sans-serif;
+        margin: 10px 0px;
+        width: 100%;
+        h3 {
+            font-size: 1.35em;
+            color: $lettercolor;
+            background-color: $backgroundcolor;
+            display: inline-block;
+            border-radius: 7px;
+            padding: 3px 5px;
+        }
+        ul li {
+            color: rgb(48, 47, 47);
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.2em;
+            text-decoration: underline;
+            .schedules-hour {
+                color: $backgroundcolor;
+                text-decoration: underline;
+                padding: 0px 5px;
+                text-shadow: 0px 0px 5px #ffc0cb;
+            }
+            .schedules-hour:hover {
+                color: $lettercolor;
+                background-color: $backgroundcolor;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+.section-training:hover {
+    background-color: #f1e3e5;
+    border-top-right-radius: 40%;
+}

@@ -1,0 +1,92 @@
+//import
+@import "../utilidades/variables";
+
+/* --------------------------------- Contact -------------------------------- */
+
+.contact-main {
+    min-height: 90vh;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/contact/fondo-contacto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .contact-image {
+        display: none;
+    }
+    .contact-form {
+        padding: 25px 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: rgba(245, 245, 245, .4);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: $strongbackgroundcolor;
+        outline: 2px solid $backgroundcolor;
+        border-radius: 20px;
+        width: 90%;
+        max-width: 600px;
+        input {
+            width: 60%;
+            max-width: 200px;
+            outline: none;
+            border: 1px solid $backgroundcolor;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            height: 30px;
+            font-weight: bold;
+            font-family: 'Josefin Sans', sans-serif;
+            transition: transform .3s;
+        }
+        input:hover {
+            transform: scale(1.05);
+            outline: 1px solid $strongbackgroundcolor;
+        }
+        #email {
+            max-width: 350px;
+        }
+        #msg {
+            max-width: 90%;
+            max-height: 200px;
+            border: 1px solid $backgroundcolor;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        #msg::placeholder {
+            font-size: 1.1rem;
+        }
+        #msg:focus {
+            outline: 1px solid $strongbackgroundcolor;
+        }
+        #submit {
+            margin: auto;
+            min-width: 150px;
+            height: 30px;
+            color: $strongbackgroundcolor;
+            transition: .4s;
+        }
+        #submit:hover {
+            transform: scale(1.05);
+            background-color: $backgroundcolor;
+            color: $lettercolor;
+        
+        }
+    }
+    .telephone {
+        position: fixed;
+        bottom: 12vh;
+        right: 3px;
+        img {
+            height: 70px;
+            transition: transform .3s;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+    }
+}

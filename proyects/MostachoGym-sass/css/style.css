@@ -1,0 +1,521 @@
+/* ---------------------------------- Fonts --------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata&family=Josefin+Sans&family=Kanit&family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&family=Poppins&family=Quicksand&family=Raleway&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+/*
+font-family: 'Inconsolata', monospace;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+/* Reset */
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+*::selection {
+  color: #F4F6F7;
+  background-color: #dd4f7e; }
+
+html {
+  scroll-padding-top: 11vh;
+  scroll-behavior: smooth; }
+
+body {
+  margin-top: 8vh; }
+  body ul {
+    list-style: none; }
+  body a {
+    text-decoration: none;
+    cursor: pointer; }
+  body h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #f185a9;
+    font-weight: bold; }
+  body h2:Hover {
+    text-decoration: underline; }
+
+.header {
+  min-height: 10vh;
+  background-color: #f185a9;
+  z-index: 9999;
+  position: fixed;
+  top: 0px;
+  box-shadow: 0px 1px 7px #dd4f7e; }
+  .header .header-nav {
+    text-align: center; }
+    .header .header-nav ul li a {
+      display: inline-block;
+      color: #f185a9;
+      min-width: 100px;
+      padding: 2px 5px;
+      margin: 5px;
+      background-color: #F4F6F7;
+      border-radius: 5px;
+      font-family: 'Kanit', sans-serif;
+      font-size: 1.08rem;
+      font-weight: 700;
+      transition: background .6s, color .8s; }
+    .header .header-nav ul li a:hover {
+      color: #F4F6F7;
+      background-color: #f185a9;
+      outline: 2px solid #F4F6F7; }
+  .header img {
+    height: 1.1rem; }
+  .header .header-button {
+    border: none; }
+    .header .header-button i {
+      color: #F4F6F7;
+      font-size: 1.5rem; }
+  .header .header-button:focus {
+    border: none;
+    outline: none; }
+
+/* --------------------------------- Footer --------------------------------- */
+.footer {
+  display: flex;
+  padding: 0px 25px;
+  min-height: 10vh;
+  flex-direction: column;
+  background-color: #f185a9;
+  justify-content: center;
+  align-items: center; }
+  .footer .footer-copyright a {
+    font-family: 'Kanit', sans-serif;
+    color: #f5f5f5;
+    font-size: 1.3rem; }
+  .footer .footer-reds {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 30px; }
+    .footer .footer-reds a i {
+      border-radius: 10px;
+      font-size: 2rem;
+      padding: 3px 15px;
+      color: whitesmoke;
+      transition: transform .6s, background .8s, color 1s; }
+    .footer .footer-reds a i:hover {
+      background-color: whitesmoke;
+      color: palevioletred;
+      transform: scale(1.1); }
+
+/* --------------------------------- Banner --------------------------------- */
+.banner {
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/index/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .banner h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: #dd4f7e;
+    font-weight: bold;
+    background-color: #F4F6F7;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    max-width: 90%; }
+
+/* ------------------------------ Testimonials ------------------------------ */
+.testimonials {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  display: grid;
+  row-gap: 15px;
+  align-items: center;
+  justify-items: center;
+  margin: 25px;
+  /* Maps */ }
+  .testimonials .maps-cover {
+    height: 300px;
+    width: 100%; }
+    .testimonials .maps-cover #maps {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .testimonials .testimonio {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #E5E7E9; }
+    .testimonials .testimonio .testimonio-encabezado h4 {
+      font-size: 1.3em; }
+    .testimonials .testimonio .testimonio-encabezado .testimonio-estrellas .star {
+      color: #f185a9;
+      font-size: 1.3rem;
+      text-shadow: 1px 1px 2px #dd4f7e; }
+    .testimonials .testimonio .testimonio-encabezado .testimonio-estrellas .star:hover {
+      color: #dd4f7e;
+      text-shadow: 1px 1px 2px #f185a9; }
+
+/* --------------------------------- Famili --------------------------------- */
+.famili {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 30px 20px; }
+  .famili .famili-images {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; }
+    .famili .famili-images .image-three, .famili .famili-images .image-four {
+      display: none; }
+    .famili .famili-images .images {
+      height: 300px;
+      width: 100%; }
+      .famili .famili-images .images img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 15px;
+        transition: transform 1s; }
+      .famili .famili-images .images img:hover {
+        box-shadow: 0px 0px 15px #dd4f7e;
+        cursor: url(../img/Cursores/cursor.png), auto;
+        transform: scale(1.05);
+        z-index: 999; }
+
+/* ------------------------------ Page routines ----------------------------- */
+.routines {
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 90vh; }
+  .routines .routine-list {
+    width: 100%;
+    min-height: 250px;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px; }
+    .routines .routine-list a {
+      font-size: 1.4rem;
+      color: #f185a9;
+      padding: 5px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold; }
+    .routines .routine-list ol {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      color: #F4F6F7;
+      list-style-position: inside;
+      list-style: circle; }
+      .routines .routine-list ol li {
+        font-family: 'Montserrat', sans-serif;
+        margin: 10px 0px;
+        font-size: 1.1rem; }
+      .routines .routine-list ol li:hover {
+        font-weight: bold; }
+  .routines .routine-one {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/routines/hipertrofiahombre.jpg); }
+  .routines .routine-two {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/routines/hipertrofiamujer.jpg); }
+  .routines .routine-three {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/routines/fuerzadeportista.jpg); }
+  .routines .routine-four {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/routines/hipertrofia.jpg); }
+
+/* --------------------------------- Contact -------------------------------- */
+.contact-main {
+  min-height: 90vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/contact/fondo-contacto.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .contact-main .contact-image {
+    display: none; }
+  .contact-main .contact-form {
+    padding: 25px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(245, 245, 245, 0.4);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #dd4f7e;
+    outline: 2px solid #f185a9;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px; }
+    .contact-main .contact-form input {
+      width: 60%;
+      max-width: 200px;
+      outline: none;
+      border: 1px solid #f185a9;
+      border-radius: 5px;
+      font-size: 0.95rem;
+      height: 30px;
+      font-weight: bold;
+      font-family: 'Josefin Sans', sans-serif;
+      transition: transform .3s; }
+    .contact-main .contact-form input:hover {
+      transform: scale(1.05);
+      outline: 1px solid #dd4f7e; }
+    .contact-main .contact-form #email {
+      max-width: 350px; }
+    .contact-main .contact-form #msg {
+      max-width: 90%;
+      max-height: 200px;
+      border: 1px solid #f185a9;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-family: 'Josefin Sans', sans-serif; }
+    .contact-main .contact-form #msg::placeholder {
+      font-size: 1.1rem; }
+    .contact-main .contact-form #msg:focus {
+      outline: 1px solid #dd4f7e; }
+    .contact-main .contact-form #submit {
+      margin: auto;
+      min-width: 150px;
+      height: 30px;
+      color: #dd4f7e;
+      transition: .4s; }
+    .contact-main .contact-form #submit:hover {
+      transform: scale(1.05);
+      background-color: #f185a9;
+      color: #F4F6F7; }
+  .contact-main .telephone {
+    position: fixed;
+    bottom: 12vh;
+    right: 3px; }
+    .contact-main .telephone img {
+      height: 70px;
+      transition: transform .3s; }
+    .contact-main .telephone img:hover {
+      transform: scale(1.05); }
+
+/* -------------------------------- TimeTable ------------------------------- */
+.schedules {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+
+.schedules-section .shedules-section-nav {
+  padding: 20px 0px;
+  background-color: #f185a9;
+  border-radius: 30px;
+  display: none; }
+  .schedules-section .shedules-section-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 15px;
+    flex-wrap: wrap; }
+    .schedules-section .shedules-section-nav ul li a {
+      border-right: 1px solid rgba(255, 192, 203, 0.603);
+      border-left: 1px solid rgba(255, 192, 203, 0.603);
+      color: #F4F6F7;
+      font-size: 1.1em;
+      font-family: 'Montserrat', sans-serif;
+      padding: 5px;
+      border-radius: 5px;
+      flex-direction: row; }
+    .schedules-section .shedules-section-nav ul li a:hover {
+      background-color: #F4F6F7;
+      color: #f185a9;
+      font-weight: bold; }
+
+/* --------------------------- Horarios de los diferentes entrenamientos --------------------------- */
+.section-training {
+  padding: 20px 25px;
+  width: 100%;
+  background-color: #F4F6F7;
+  transition: 0.4s; }
+  .section-training .training-schedules {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 10px 0px;
+    width: 100%; }
+    .section-training .training-schedules h3 {
+      font-size: 1.35em;
+      color: #F4F6F7;
+      background-color: #f185a9;
+      display: inline-block;
+      border-radius: 7px;
+      padding: 3px 5px; }
+    .section-training .training-schedules ul li {
+      color: #302f2f;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 1.2em;
+      text-decoration: underline; }
+      .section-training .training-schedules ul li .schedules-hour {
+        color: #f185a9;
+        text-decoration: underline;
+        padding: 0px 5px;
+        text-shadow: 0px 0px 5px #ffc0cb; }
+      .section-training .training-schedules ul li .schedules-hour:hover {
+        color: #F4F6F7;
+        background-color: #f185a9;
+        border-radius: 5px; }
+
+.section-training:hover {
+  background-color: #f1e3e5;
+  border-top-right-radius: 40%; }
+
+/* ---------------------------------- News ---------------------------------- */
+.section-news {
+  display: none; }
+
+.sections-news-tablet {
+  width: 100%;
+  height: 80vh; }
+  .sections-news-tablet .news-list-tablet .news-items-tablet {
+    background-color: #F4F6F7;
+    width: 100%;
+    height: 500px;
+    padding: 10px; }
+    .sections-news-tablet .news-list-tablet .news-items-tablet iframe {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      padding: 5px;
+      outline: 3px solid #f185a9;
+      outline-style: dashed; }
+  .sections-news-tablet .news-list-tablet .news-button-tablet span {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    padding: 2px; }
+
+/* --------------------------------- Tablets -------------------------------- */
+@media screen and (min-width: 600px) {
+  /* Footer */
+  .footer {
+    flex-direction: row;
+    justify-content: space-between; }
+  /* HomePage */
+  .famili .famili-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+    .famili .famili-images .image-three {
+      display: inline;
+      grid-column: span 2; }
+  /* Routines */
+  .routines {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto; }
+    .routines .routine-list a {
+      font-size: 1.5rem; }
+    .routines .routine-list ol li {
+      font-size: 1.2rem; }
+  /* -------------------------------- Timetable ------------------------------- */
+  .schedules-section .shedules-section-nav {
+    display: block; }
+  /* ---------------------------------- News ---------------------------------- */
+  .sections-news-tablet {
+    display: none; }
+  .section-news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px 25px;
+    background-color: #F4F6F7;
+    border-radius: 15px;
+    min-height: 100vh; }
+    .section-news .news-item {
+      width: 100%; }
+      .section-news .news-item iframe {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        outline: 3px dashed #dd4f7e; }
+    .section-news .news-item-one {
+      grid-row: span 3; }
+      .section-news .news-item-one iframe {
+        padding-top: 100px;
+        outline: none; } }
+
+/* -------------------------------- Computers ------------------------------- */
+@media screen and (min-width: 1024px) {
+  /* Homepage */
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px; }
+    .testimonials .maps-cover {
+      grid-row: span 3;
+      height: 100%; }
+    .testimonials .testimonio {
+      max-width: 75%; }
+  .famili .famili-images {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+    .famili .famili-images .image-one {
+      height: 100%;
+      grid-column: span 1;
+      grid-row: span 2; }
+    .famili .famili-images .image-three {
+      height: 100%;
+      grid-column: span 1;
+      grid-row: span 2; }
+    .famili .famili-images .image-four {
+      display: inline;
+      grid-column: span 1; }
+  /* Routines */
+  .routines {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto; }
+    .routines .routine-list a {
+      font-size: 1.7rem; }
+    .routines .routine-list ol {
+      min-height: 70vh;
+      padding: 10px;
+      gap: 70px; }
+      .routines .routine-list ol li {
+        font-size: 1.4rem; }
+      .routines .routine-list ol li:hover {
+        font-weight: bold; }
+  /* Contact */
+  .contact-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: .2fr .5fr;
+    gap: 20px; }
+    .contact-main h2 {
+      grid-column: span 2; }
+    .contact-main .contact-image {
+      display: block;
+      height: 80%;
+      max-width: 700px;
+      border: 2px solid #dd4f7e;
+      border-radius: 15px;
+      justify-self: center;
+      align-self: center; }
+      .contact-main .contact-image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px; } }

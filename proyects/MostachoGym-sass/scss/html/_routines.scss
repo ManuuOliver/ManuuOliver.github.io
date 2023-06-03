@@ -1,0 +1,63 @@
+//import
+@import "../utilidades/variables";
+
+/* ------------------------------ Page routines ----------------------------- */
+.routines {
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 90vh;
+    .routine-list {
+        width: 100%;
+        min-height: 250px;
+        text-align: center;
+        background-color: black;
+        border-radius: 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+        a {
+            font-size: 1.4rem;
+            color: $backgroundcolor;
+            padding: 5px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+        ol {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: $lettercolor;
+            list-style-position: inside;
+            list-style: circle;
+            li {
+                font-family: 'Montserrat', sans-serif;
+                margin: 10px 0px;
+                font-size: 1.1rem;
+            }
+            li:hover {
+                font-weight: bold;
+            }
+        }
+    }
+    .routine-one {
+        background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url(../img/routines/hipertrofiahombre.jpg);
+    }
+    
+    .routine-two {
+        background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url(../img/routines/hipertrofiamujer.jpg);
+    }
+    
+    .routine-three {
+        background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url(../img/routines/fuerzadeportista.jpg);
+    }
+    
+    .routine-four {
+        background-image: linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)), url(../img/routines/hipertrofia.jpg);
+    }
+}

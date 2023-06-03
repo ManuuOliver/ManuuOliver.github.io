@@ -1,0 +1,17 @@
+//extend
+
+%border{
+    border: 8px solid black;
+    margin: 1rem;
+    padding: .5rem;
+}
+
+//Flex
+
+// @extend %border;
+
+%tablets{
+    @media screen and (min-width:600px){
+    }
+}
+

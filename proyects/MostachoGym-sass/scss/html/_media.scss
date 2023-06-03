@@ -1,0 +1,161 @@
+//import
+@import "../utilidades/variables";
+
+/* --------------------------------- Tablets -------------------------------- */
+@media screen and (min-width:600px){
+    /* Footer */
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /* HomePage */
+    
+    .famili{
+        .famili-images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            .image-three {
+                display: inline;
+                grid-column: span 2;
+            }
+        }
+    }
+    
+    /* Routines */
+    .routines {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        .routine-list{
+            a {
+                font-size: 1.5rem;
+            }
+            ol li {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    /* -------------------------------- Timetable ------------------------------- */
+    .schedules-section{
+        .shedules-section-nav {
+            display: block;
+        }
+    }
+    /* ---------------------------------- News ---------------------------------- */
+    .sections-news-tablet{
+        display: none;
+    }
+    .section-news{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding: 20px 25px;
+        background-color: $lettercolor;
+        border-radius: 15px;
+        min-height: 100vh;
+        .news-item{
+            width: 100%;
+            iframe{
+                height: 100%;
+                width: 100%;
+                object-fit:cover;
+                outline: 3px dashed $strongbackgroundcolor;
+            }
+        }
+        .news-item-one{
+            grid-row: span 3;
+            iframe{
+                padding-top: 100px;
+                outline: none;
+            }
+        }
+    }
+}
+
+/* -------------------------------- Computers ------------------------------- */
+@media screen and (min-width:1024px){
+    /* Homepage */
+    .testimonials {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 15px;
+        .maps-cover {
+            grid-row: span 3;
+            height: 100%;
+        }
+        .testimonio {
+            max-width: 75%;
+        }
+    }
+    .famili{
+        .famili-images {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            .image-one {
+                height: 100%;
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+            .image-three {
+                height: 100%;
+                grid-column: span 1;
+                grid-row: span 2;
+            }
+        
+            .image-four {
+                display: inline;
+                grid-column: span 1;
+            }
+        }
+    }
+    /* Routines */
+    .routines {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        .routine-list {
+            a {
+                font-size: 1.7rem;
+            }
+            ol {
+                min-height: 70vh;
+                padding: 10px;
+                gap: 70px;
+                li {
+                    font-size: 1.4rem;
+                }
+                li:hover {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    /* Contact */
+    .contact-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: .2fr .5fr;
+        gap: 20px;
+        h2 {
+            grid-column: span 2;
+        }
+        .contact-image {
+            display: block;
+            height: 80%;
+            max-width: 700px;
+            border: 2px solid $strongbackgroundcolor;
+            border-radius: 15px;
+            justify-self: center;
+            align-self: center;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,48 @@
+//Import
+@import "../utilidades/variables";
+
+.header{
+    min-height: 10vh;
+    background-color: $backgroundcolor;
+    z-index: 9999;
+    position: fixed;
+    top: 0px;
+    box-shadow: 0px 1px 7px $strongbackgroundcolor;
+    .header-nav {
+        text-align: center;
+        ul li a {
+            display: inline-block;
+            color: $backgroundcolor;
+            min-width: 100px;
+            padding: 2px 5px;
+            margin: 5px;
+            background-color: $lettercolor;
+            border-radius: 5px;
+            font-family: 'Kanit', sans-serif;
+            font-size: 1.08rem;
+            font-weight: 700;
+            transition: background .6s, color .8s;
+        }
+        ul li a:hover {
+            color: $lettercolor;
+            background-color: $backgroundcolor;
+            outline: 2px solid $lettercolor;
+        
+        }
+    }
+    img {
+        height: 1.1rem;
+    }
+    .header-button {
+        border: none;
+        i {
+            color: $lettercolor;
+            font-size: 1.5rem;
+        }
+    }
+    .header-button:focus {
+        border: none;
+        outline: none;
+    
+    }
+}
